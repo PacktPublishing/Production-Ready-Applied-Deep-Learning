@@ -1,0 +1,1 @@
+- This folder has the python script that extracts features from google scholar for authors
