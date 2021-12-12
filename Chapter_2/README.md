@@ -1,4 +1,4 @@
-# Packt_Chapter_2
+# Chapter_2
 
 Run below command to install libraries
 
