@@ -1,0 +1,11 @@
+author_name,email,affiliation,coauthors_names,research_interest
+Ambareen Siraj,tntech.edu,Tennessee Tech University,Rayford Vaughn##William Eberle##Siddharth Kaza##Christa Cody##Khaled Rabieh##Mohammad Ashiqur Rahman##Lenin Mookiah##Ferrol Aderholdt##Brandon Malone,network_security##cyber_physical_systems_security##cyber_education_and_workforce_development
+Dr. Sirisha Velampalli,crraoaimscs.res.in,,William Eberle##Lenin Mookiah,graph_mining##big_data_analytics##machine_learning
+Lenin Mookiah,students.tntech.edu,,William Eberle##Lawrence Holder##Ambareen Siraj##Dr. Sirisha Velampalli##Talbert, DA,graph_mining##anomaly_detection##news_mining
+Khaled Rabieh,shsu.edu,,Mohamed M. E. A. Mahmoud##Kemal Akkaya##Samet Tonyali##Terry N. Guo##Ambareen Siraj##Jelena Misic##Mahmoud Allam,information_security##vehicular_ad_hoc_networks##privacy_preserving_schemes##smart_grid_security##collusion_attacks_and_smaty_ci
+Samet Tonyali,agu.edu.tr,Abdullah Gul University,Kemal Akkaya##Mohamed M. E. A. Mahmoud##Nico Saputro##Khaled Rabieh##Selcuk Uluagac##Ozan Cakmak##Hawzhin Mohammed##Utku Ozgur##Mehrdad Nojoumian##Ahmad Alsharif##Ismail Guvenc##Fatih Senel##Xiuzhen Cheng##Ali Fuat ALKAYA##Mahmoud Nabil Mahmoud,security_and_privacy##internet_of_things##cyberphysical_systems##smart_grid_communications##machine_learning
+Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,,security_and_privacy_preservation_for_wireless_networks
+Christa Cody,ncsu.edu,North Carolina State University,,artificial_intelligence##machine_learning##educational_technology
+Mehrdad Nojoumian,fau.edu,Florida Atlantic University,Douglas Stinson##Kemal Akkaya##Timothy Lethbridge##Nico Saputro##Arash Golchubian##Erik Engeberg##Samet Tonyali##Selcuk Uluagac##Moaed A. Abd##Charles Kamhoua##Laurent Njilla##Mehran Mozaffari Kermani##Luiza Menezes##Sheikh Mahbub Habib##Carlos Garcia Cordero##Nasrollah Pakniat##Ziba Eslami##Craig Ades##Max Mühlhäuser##Emmanouil Vasilomanolakis,privacy##security##trust_management##artificial_intelligence##human_autonomy_interactions
+Moaed A. Abd,fau.edu,Florida Atlantic University,Erik Engeberg##Mehrdad Nojoumian##Mostapha Al-Saidi##Benjamin A Kent##Emmanuelle Tognoli,machine_learning##prosthetic_limbs_control##instruments_testing_and_calibration##soft_robotics
+Ferrol Aderholdt,nvidia.com,NVIDIA,,
