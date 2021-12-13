@@ -9,7 +9,7 @@ import csv
 # debug flag
 is_debug = False
 # max authors to be crawled
-LIMIT_MAX_AUTHORS = 100
+LIMIT_MAX_AUTHORS = 10000
 # keeps record of all crawled url so far
 lst_already_crawled_url = []
 # holds all the urls collected from co-author list to be crawled further
