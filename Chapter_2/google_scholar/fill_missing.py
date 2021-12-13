@@ -3,14 +3,15 @@ import pandas as pd
 import traceback
 import csv
 
-def fill_missing_values(in_file):
+
+def fill_missing_values(in_file, out_file):
     try:
         df = pd.read_csv(in_file)
-        print(df)
         df.affiliation.fillna(value="not found", inplace=True)
-        # readCSV = csv.DictReader(in_file, delimiter=',')
-        # for row in readCSV:
-        #     print(row)
+        # check for "not found" values
+        print(df["affiliation"].unique())
+        # writing to csv file
+        df.to_csv(out_file,  encoding='utf-8', index=False)
 
     except Exception as e:
         traceback.print_exc()
@@ -18,4 +19,5 @@ def fill_missing_values(in_file):
 
 if __name__ == "__main__":
     in_file = "./output.csv"
-    fill_missing_values(in_file)
+    out_file = "./output_fillna.csv"
+    fill_missing_values(in_file, out_file)
