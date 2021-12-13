@@ -118,26 +118,13 @@ def crawl_author(url):
             univ_new = str(a)[start_index:end_index]
             print(f"Found univ {univ_new}")
 
-    # print(f"univ find {univ}")
-    # index_org = str(univ).find("org=")
-    # if  index_org >= 0:
-    #     start_index = str(univ).find(">" , index_org) + 1
-    #     end_index = str(univ).find("<", start_index)
-    #     univ_new = str(univ)[start_index:end_index]
-    #     print(f"Found univ {univ_new}")
-
-
     all_a = html_soup.select('.gsc_prf_ila h')
 
     for a in all_a:
         print(a)
 
-
-    # return (lst_resear_int, lst_coauthors_link, lst_coauthor_name, resear_int_conc, coauthors_link_conc,
-    #         coauthor_name_conc, main_author_name, main_email, univ)
-
-    line_to_return = str(main_author_name).replace(",", "") + "," + str(main_email) + "," + str(univ_new) \
-                     + "," + str(coauthor_name_conc)  + "," + str(resear_int_conc)
+    line_to_return = str(main_author_name).replace(",", "") + "," + str(main_email) + "," + str(univ_new).replace(",", "") \
+                     + "," + str(coauthor_name_conc).replace(",", "")  + "," + str(resear_int_conc).replace(",", "")
     line_to_return = line_to_return.replace("[]", "")
 
     return line_to_return
