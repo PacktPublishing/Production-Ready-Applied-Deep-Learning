@@ -1,3 +1,7 @@
+##### Purge dangling images
+
+	docker system prune
+
 ###### Build the image. 
 
     docker build --no-cache -t py3-jupyter-tensorflow .
