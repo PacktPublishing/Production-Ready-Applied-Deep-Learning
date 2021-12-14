@@ -1,4 +1,4 @@
-# Collect Google Scholar authors html pages from web and convert to CSV
+# Collect Google Scholar authors html pages from web and write it as a CSV file
 from bs4 import BeautifulSoup
 from requests import get
 import random

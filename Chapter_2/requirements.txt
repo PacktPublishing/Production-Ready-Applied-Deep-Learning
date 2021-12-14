@@ -1,3 +1,5 @@
 BeautifulSoup4
 requests
 pandas
+nltk
+scikit-learn
