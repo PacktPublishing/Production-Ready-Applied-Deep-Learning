@@ -70,3 +70,8 @@ if __name__ == "__main__":
 # Inverse document frequency
 # Term frequency is how common a word is, inverse document frequency (IDF) is how unique or rare a word is.
 # IDF(t) = log_e(Total number of documents / Number of documents with term t in it)
+##############################################################################
+# ToDo List
+##############################################################################
+# ToDO: Also, apply the stemming concept with Bag of Words.
+#     (Stemming is the process of reducing a word to word stem.)
