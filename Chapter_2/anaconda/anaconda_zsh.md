@@ -30,3 +30,7 @@ Note: conda init is available in conda versions 4.6.12 and later.
 Step 6: Close and open a new shell after conda initialization
 
 Step 7: Verify installation
+
+
+
+Note: These scripts are tested in mac Sur and should work in any mac OS version.
