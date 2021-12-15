@@ -1,6 +1,8 @@
 # This script collects the API data from Reddit
 import requests
 
+# TODO: write to csv file
+
 # URL that needs to be crawled for JSON object. Should return jSON
 url = 'https://www.reddit.com/r/all.json'
 
