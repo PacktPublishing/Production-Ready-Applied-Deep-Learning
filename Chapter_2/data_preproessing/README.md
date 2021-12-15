@@ -21,4 +21,4 @@ Output File for the code:
 6. [Code](./normalize.py) for Normalize a feature.
 
  
- 
+ [Kaggle example](https://www.kaggle.com/pierremegret/gensim-word2vec-tutorial) related to `Word2Vec` algorithm.
