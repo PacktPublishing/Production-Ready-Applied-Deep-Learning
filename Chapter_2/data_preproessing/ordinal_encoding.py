@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
+# Simple example below
+
 # creating dataframe for research interest
 ri_types = ('machine_learning','natural_language_processing','data_visualization', 'data_mining')
 df_ri = pd.DataFrame(ri_types, columns=['research_interest'])
@@ -13,3 +15,5 @@ labelencoder = LabelEncoder()
 df_ri['ri_integer'] = labelencoder.fit_transform(df_ri['research_interest'])
 
 print(df_ri)
+
+# ToDo: read from Google Scholar csv file and then do ordinal encoding
