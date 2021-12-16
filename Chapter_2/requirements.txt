@@ -3,3 +3,6 @@ requests
 pandas
 nltk
 scikit-learn
+tabulate
+matplotlib
+seaborn[all]
