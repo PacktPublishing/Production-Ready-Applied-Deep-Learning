@@ -78,7 +78,8 @@ def crawl_author(url):
             if len(coauthors_link_conc) == 0:
                 coauthors_link_conc = ca
             else:
-                coauthors_link_conc = coauthors_link_conc + "##" + ca  # use ## as delimiter
+                # used ## as delimiter for concatenating coauthor names
+                coauthors_link_conc = coauthors_link_conc + "##" + ca
             if is_debug:
                 print("temp2: " + str(temp2) + " current url:" + a['href'])
             # Get name of co-author
@@ -88,7 +89,8 @@ def crawl_author(url):
             if len(coauthor_name_conc) == 0:
                 coauthor_name_conc = coauthor_name
             else:
-                coauthor_name_conc = coauthor_name_conc + "##" + coauthor_name  # use ## as delimiter
+                # used ## as delimiter for concatenating coauthor names
+                coauthor_name_conc = coauthor_name_conc + "##" + coauthor_name
             lst_coauthor_name.append(coauthor_name)
 
     print("-------------")
@@ -135,6 +137,7 @@ def random_pick_url(lst_global_url):
     index = random.randrange(0, len(lst_global_url) - 1)
     url = lst_global_url[index]
     return url
+
 
 if __name__ == "__main__":
     csv_line = ""
