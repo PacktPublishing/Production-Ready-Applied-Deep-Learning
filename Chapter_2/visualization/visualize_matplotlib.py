@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def matplotlib_pie(in_file):
+def matplotlib_pie_bar(in_file):
     try:
         # read csv file
         df = pd.read_csv(in_file)
@@ -55,6 +55,5 @@ def matplotlib_pie(in_file):
 
 if __name__ == "__main__":
     in_file = "../csv_data/data/cdc-moderna-covid-19-vaccine-distribution-by-state.csv"
-    out_file = "./output_normalize.csv"
     # create bag of words for feature research interest with NLTK
-    matplotlib_pie(in_file)
+    matplotlib_pie_bar(in_file)
