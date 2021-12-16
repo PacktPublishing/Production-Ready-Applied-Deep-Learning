@@ -6,3 +6,4 @@ scikit-learn
 tabulate
 matplotlib
 seaborn[all]
+numpy

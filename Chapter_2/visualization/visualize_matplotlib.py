@@ -34,6 +34,19 @@ def matplotlib_pie(in_file):
         plt.axis('equal')
         # show the actual plot
         plt.show()
+
+        # bar chart plotting
+        fig = plt.figure()
+
+        ax = fig.add_axes([0, 0, 1, 1])
+        ind = np.arange(len(dict_top10.keys()))
+        ax.set_ylabel('# Vaccines distributed')
+        ax.set_xticks(ind, dict_top10.keys())
+        x_states = dict_top10.keys()
+        y_vaccine_dist_1 = dict_top10.values()
+        ax.bar(x_states, y_vaccine_dist_1)
+        plt.show()
+
     except Exception as e:
         traceback.print_exc()
 
