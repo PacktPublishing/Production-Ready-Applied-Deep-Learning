@@ -60,19 +60,6 @@ def normalize_research(in_file, out_file):
         traceback.print_exc()
 
 
-# def write_to_file(filename, str_line, count):
-#     if count == 1:
-#         mode = 'w'
-#         header = "author_name,email,affiliation,coauthors_names,research_interest"
-#     else:
-#         mode = 'a'
-#     # writing to csv file
-#     with open(filename, mode) as csvfile:
-#         if count == 1:
-#             csvfile.write(header + "\n")
-#         csvfile.write(str_line + "\n")
-
-
 if __name__ == "__main__":
     in_file = "../google_scholar/output.csv"
     out_file = "./output_normalize.csv"
