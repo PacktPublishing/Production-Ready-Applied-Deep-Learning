@@ -6,6 +6,7 @@ import traceback
 import pandas as pd
 from tabulate import tabulate
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def matplotlib_pie(in_file):
@@ -26,6 +27,8 @@ def matplotlib_pie(in_file):
         print(tabulate(df_mean_sorted_top10, headers='keys', tablefmt='psql'))
         # convert top 10 states dataframe to dictionary
         dict_top10 = dict(zip(df_mean_sorted_top10.state, df_mean_sorted_top10.mean_1))
+
+        # PIE CHART PLOTTING
         # colors for pie chart
         colors = ['orange', 'green', 'cyan', 'skyblue', 'yellow', 'red', 'blue', 'white', 'black', 'pink']
         # pie chart plot
@@ -35,16 +38,15 @@ def matplotlib_pie(in_file):
         # show the actual plot
         plt.show()
 
-        # bar chart plotting
-        fig = plt.figure()
-
-        ax = fig.add_axes([0, 0, 1, 1])
-        ind = np.arange(len(dict_top10.keys()))
-        ax.set_ylabel('# Vaccines distributed')
-        ax.set_xticks(ind, dict_top10.keys())
+        # BAR CHART PLOTTING
         x_states = dict_top10.keys()
         y_vaccine_dist_1 = dict_top10.values()
-        ax.bar(x_states, y_vaccine_dist_1)
+
+        fig = plt.figure(figsize=(12, 6))
+        ax = fig.add_subplot(111)
+        ax.bar(np.arange(len(x_states)), y_vaccine_dist_1, log=1)
+        ax.set_xticks(np.arange(len(x_states)))
+        ax.set_xticklabels(x_states, rotation=45, zorder=100)
         plt.show()
 
     except Exception as e:
