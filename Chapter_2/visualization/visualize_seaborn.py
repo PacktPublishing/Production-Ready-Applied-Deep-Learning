@@ -44,6 +44,7 @@ def seaborn_line_histogram(in_file):
 
 
 if __name__ == "__main__":
+    # Moderna vaccination distribution file
     in_file = "../csv_data/data/cdc-moderna-covid-19-vaccine-distribution-by-state.csv"
     # create bag of words for feature research interest with NLTK
     seaborn_line_histogram(in_file)
