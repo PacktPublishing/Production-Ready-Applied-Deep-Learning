@@ -1,0 +1,1 @@
+- This folder contains the py file to call rest API to collect JSON data.

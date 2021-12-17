@@ -1,6 +1,7 @@
 # This script collects the API data from Reddit
 import requests
 import traceback
+import json
 
 
 def json_to_csv(url, out_file):
@@ -9,8 +10,10 @@ def json_to_csv(url, out_file):
         f = open(out_file, "w")
         # request object. If you get "Too Many requests" error, try after 5 minutes
         resp = requests.get(url=url)
+        print(type(resp))
         # Json object
         json_data = resp.json()
+        print(type(json_data))
         print(json_data)
         # The json structure has the actual data inside "data" -> "children"
         json_children = json_data["data"]["children"]
