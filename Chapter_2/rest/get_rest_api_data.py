@@ -5,17 +5,20 @@ import traceback
 
 def json_to_csv(url, out_file):
     try:
+        # file for output csv
         f = open(out_file, "w")
-
-        # reques object. If you get "Too Many requests" error, try after 1-2 minutes
+        # request object. If you get "Too Many requests" error, try after 5 minutes
         resp = requests.get(url=url)
         # Json object
         json_data = resp.json()
+        print(json_data)
         # The json structure has the actual data inside "data" -> "children"
         json_children = json_data["data"]["children"]
         print(json_children)
+        print("======")
         # iterate each children data
         for i in json_children:
+            print(i)
             author = remove_comma(i["author_fullname"])
             text = remove_comma(i["selftext"])
             category = remove_comma(i["category"])
