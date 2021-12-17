@@ -27,8 +27,9 @@ def matplotlib_pie_bar(in_file):
         print(tabulate(df_mean_sorted_top10, headers='keys', tablefmt='psql'))
         # convert top 10 states dataframe to dictionary
         dict_top10 = dict(zip(df_mean_sorted_top10.state, df_mean_sorted_top10.mean_1))
-
+        ####################
         # PIE CHART PLOTTING
+        ####################
         # colors for pie chart
         colors = ['orange', 'green', 'cyan', 'skyblue', 'yellow', 'red', 'blue', 'white', 'black', 'pink']
         # pie chart plot
@@ -37,8 +38,9 @@ def matplotlib_pie_bar(in_file):
         plt.axis('equal')
         # show the actual plot
         plt.show()
-
+        ####################
         # BAR CHART PLOTTING
+        ####################
         x_states = dict_top10.keys()
         y_vaccine_dist_1 = dict_top10.values()
 
