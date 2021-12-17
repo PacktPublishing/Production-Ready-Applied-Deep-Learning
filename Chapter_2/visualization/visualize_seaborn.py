@@ -24,13 +24,13 @@ def seaborn_line_histogram(in_file):
         df_mean_sorted_top10 = df_mean_sorted[0:10]
         # top 10 sorted mean print
         print(tabulate(df_mean_sorted_top10, headers='keys', tablefmt='psql'))
-        # convert top 10 states data frame to dictionary
-        dict_top10 = dict(zip(df_mean_sorted_top10.state, df_mean_sorted_top10.mean_1))
         ####################
         # LINE CHART PLOTTING
         ####################
         # line plot
         sns.lineplot(data=df_mean_sorted_top10, x="state", y="mean_1")
+        # rotate x-axis labels
+        plt.xticks(rotation=90)
         # show the actual plot
         plt.show()
         ####################
