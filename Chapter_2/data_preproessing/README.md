@@ -22,4 +22,5 @@ Output File for the code:
 
 7. [Code](./pca.py) for PCA analysis of features with HR data set from Kaggle located [here](https://www.kaggle.com/jacksonchou/hr-data-for-analytics/version/1)
  
- [Kaggle example](https://www.kaggle.com/pierremegret/gensim-word2vec-tutorial) related to `Word2Vec` algorithm.
+8. [Kaggle example](https://www.kaggle.com/pierremegret/gensim-word2vec-tutorial) related to `Word2Vec` algorithm, which uses bag-of-words kine of features for
+   word similarity.
