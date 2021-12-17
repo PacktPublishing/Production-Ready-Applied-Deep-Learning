@@ -1,28 +1,47 @@
 # This script collects the API data from Reddit
 import requests
+import traceback
 
-# TODO: write to csv file
 
-# URL that needs to be crawled for JSON object. Should return jSON
-url = 'https://www.reddit.com/r/all.json'
+def json_to_csv(url, out_file):
+    try:
+        f = open(out_file, "w")
 
-# reques object. If you get "Too Many requests" error, try after 1-2 minutes
-resp = requests.get(url=url)
+        # reques object. If you get "Too Many requests" error, try after 1-2 minutes
+        resp = requests.get(url=url)
+        # Json object
+        json_data = resp.json()
+        # The json structure has the actual data inside "data" -> "children"
+        json_children = json_data["data"]["children"]
+        print(json_children)
+        # iterate each children data
+        for i in json_children:
+            author = remove_comma(i["author_fullname"])
+            text = remove_comma(i["selftext"])
+            category = remove_comma(i["category"])
+            title = remove_comma(i["title"])
+            upvote_ratio = remove_comma(i["upvote_ratio"])
+            is_original = remove_comma(i["is_original_content"])
+            media_embed = remove_comma(i["media_embed"])
+            # concatenate all features
+            curr_line =  f"{author},{text},{category},{title},{upvote_ratio},{is_original},{media_embed}"
+            f.write(curr_line + "\n")
 
-# Json object
-json_data = resp.json()
+        f.close()
+    except Exception:
+        traceback.print_exc()
 
-print(json_data)
 
-# The json structure has the actual data inside "data" -> "children"
-json_children = json_data["data"]["children"]
+def remove_comma(in_str):
+    """ Remove comma from given string
+    """
+    return in_str.replace(",", " ").replace("  "," ")
 
-# iterate each children data
-for i in json_children:
-    author = i["author_fullname"]
-    text = i["selftext"]
-    category = i["category"]
-    title = i["title"]
-    upvote_ratio = i["upvote_ratio"]
-    is_original = i["is_original_content"]
-    media_embed = i["media_embed"]
+
+if __name__ == "__main__":
+    # URL that needs to be crawled for JSON object. Should return jSON
+    url = 'https://www.reddit.com/r/all.json'
+    # output file
+    out_file = "./reddit.csv"
+    # collect reddit JSON data and save as csv
+    json_to_csv(url, out_file)
