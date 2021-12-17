@@ -17,7 +17,7 @@ def matplotlib_pie_bar(in_file):
         print(tabulate(df.head(10), headers='keys', tablefmt='psql'))
         # group by state and output sequence is converted to dataframe
         df_mean = df.groupby(["jurisdiction"])["_1st_dose_allocations"].mean().reset_index()
-        # rename column names of dataframe
+        # rename column names of data frame
         df_mean.columns = ["state", "mean_1"]
         # sort descending by # vaccine dose 1
         df_mean_sorted = df_mean.sort_values(by=['mean_1'], ascending=False)
