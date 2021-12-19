@@ -73,6 +73,9 @@ def clean_text(in_str):
     clean_txt = re.sub(r'\W+', ' ', in_str)
     return clean_txt
 
+def convert_lowercase(in_str):
+    return str(in_str)
+
 if __name__ == "__main__":
     # URL that needs to be crawled for JSON object. Should return jSON
     url = 'https://www.reddit.com/r/all.json'
