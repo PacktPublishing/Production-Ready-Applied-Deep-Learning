@@ -14,13 +14,20 @@ nltk.download('punkt')
 # list contains all the research interest from all the authors
 lst_research_interest = []
 
+
 def create_bow_with_nltk(in_file, out_file):
+    """ Create bag-of-words for feature "research_interest" from google scholar data set and saved into
+        a csv file named "output_bow.csv"
+    """
     try:
         # read csv file
         df = pd.read_csv(in_file)
         # write csv file
         f = open(out_file, 'w')
-
+        # header for the output CSV file with research interest bag-of-words
+        header = "author_name,email,affiliation,coauthors_names,research_bag_of_words\n"
+        f.write(header)
+        # read each line in dataframe (i.e., each line of input file)
         for index, row in df.iterrows():
             curr_authorname = row['author_name']
             curr_email = row['email']
@@ -29,10 +36,11 @@ def create_bow_with_nltk(in_file, out_file):
             curr_research_interest = str(row['research_interest']).replace("##", " ").replace("_", " ")
             lst_research_interest.append(curr_research_interest)
             # TODO: add stop words filtering before doing tokenization
-            curr_research_int_token =  word_tokenize(curr_research_interest)
+            curr_research_int_token = word_tokenize(curr_research_interest)
             curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names},{curr_research_int_token}"
+            # write to csv file
             f.write(curr_line + "\n")
-
+        # close the output file object
         f.close()
     except Exception as e:
         traceback.print_exc()
@@ -40,14 +48,17 @@ def create_bow_with_nltk(in_file, out_file):
 
 def create_tf_idf_with_scikit():
     try:
+        # create an instance for tf-idf vectorizer
         tfidf_vectorizer = TfidfVectorizer(use_idf=True)
+        # use the td-idf instance to fit list of research_interest (feature)
         tfidf = tfidf_vectorizer.fit_transform(lst_research_interest)
+        # tfidf[0].T.todense() provides the tf-idf dense vector calculated for the research_interest
         df = pd.DataFrame(tfidf[0].T.todense(), index=tfidf_vectorizer.get_feature_names(), columns=["tf-idf"])
+        # sort the tf-idf calculated using `sort_values` of dataframe.
         df = df.sort_values('tf-idf', ascending=False)
         # top 30 words with highest tf-idf
         print (df.head(30))
-
-    except Exception as e:
+    except:
         traceback.print_exc()
 
 

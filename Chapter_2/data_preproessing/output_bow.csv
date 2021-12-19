@@ -1,3 +1,4 @@
+author_name,email,affiliation,coauthors_names,research_bag_of_words
 William Eberle,tntech.edu,Tennessee Technological University,nan,['data', 'mining', 'anomaly', 'detection']
 Lawrence Holder,wsu.edu,Washington State University,Diane J Cook##William Eberle,['artificial', 'intelligence', 'machine', 'learning', 'data', 'mining', 'graph', 'mining', 'security']
 Talbert DA,tntech.edu,Tennessee Technological University,nan,['machine', 'learning', 'never', 'ending', 'learning', 'lifelong', 'machine', 'learning', 'medical', 'informatics']
