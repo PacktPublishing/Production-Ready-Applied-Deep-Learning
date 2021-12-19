@@ -2,7 +2,7 @@
   JSON data, parse it, extract required features from it.
 
 - A copy of the locally stored JSON reddit file collected using REST API request
-is located [here](./reddit.json)
+is located here at [reddit.json](./reddit.json)
 
 - [get_rest_api_data.py](./get_rest_api_data.py) is used to make python library `urllib` request object `request` to
 REST endpoint [here](https://www.reddit.com/r/all.json) that returns JSON file. The JSON
