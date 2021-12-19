@@ -13,7 +13,10 @@ is_read_local_json = True
 def json_to_csv(url, out_file):
     try:
         # file for output csv
-        f_out = open("./reddit.csv", "w")
+        f_out = open(out_file, "w")
+        # header for output CSV
+        header_out_csv = "author_fullname,selftext,is_video,title,is_original_content,media_embed"
+        f_out.write(header_out_csv + '\n')
         # request object. If you get "Too Many requests" error, try after 5 minutes
         # resp = requests.get(url=url)
         # print(type(resp))
@@ -43,6 +46,7 @@ def json_to_csv(url, out_file):
         # json_children = json_data['data']['children']
         # print(json_children)
         print("======")
+
         # iterate each children data
         for i in data_children:
             data_obj = i["data"]
