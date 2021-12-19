@@ -21,7 +21,7 @@ Output File for the code:
 
 - [Code](./one_hot_encoding.py) for One Hot Encoding.
 
-    One Hot Encoding is shown [here](./images/one_hot_encoding.png).
+    One Hot Encoding output is shown in image [here](./images/one_hot_encoding.png).
     In the image, the one hot encoding is applied for feature `is_artificial_intelligence` which holds one of the categorical value 
     in ["yes", "no"]. One hot encoding produced two columns "0" and "1" representing "no" and "yes". "0" column shows the value 1, is_artificial_intelligence is
     "no." If "1" column shows the value 1, then is_artificial_intelligence is "yes."     
