@@ -14,9 +14,13 @@ Output File for the code:
 
 3. [Code](./bag_of_words_and_tf_idf.py) for Tf-idf.
 
-4. [Code](./one_hot_encoding.py) for One Hot Encoding.
+4. [Code](./ordinal_encoding.py) for Ordinal Encoding.
 
-5. [Code](./ordinal_encoding.py) for Ordinal Encoding.
+    Ordinal Encoding is shown [here](./images/ordinal_encoding.png)
+
+5. [Code](./one_hot_encoding.py) for One Hot Encoding.
+
+    One Hot Encoding is shown [here](./images/one_hot_encoding.png)
 
 6. [Code](./normalize.py) for Normalize a feature.
 
