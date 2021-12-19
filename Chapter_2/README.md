@@ -7,7 +7,8 @@ encoding, one hot encoding, normalize features are explained with codes referred
 
 In normalize feature example, you will learn how to fill up empty values with a default value with a example from
 google scholar data set. Filling up the missing values will be shown by using `fillna` method with google scholar 
-data set and reddit data set. 
+data set. Similarly, in case of empty `text` feature in reddit data set, use custom function to fill it up in script 
+[get_rest_api_data.py](./rest/get_rest_api_data.py). 
 
 
 Run below command to install libraries

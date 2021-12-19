@@ -14,7 +14,7 @@ def json_to_csv(url, in_file, out_file):
         # file for output csv
         f_out = open(out_file, "w")
         # header for output CSV
-        header_out_csv = "author_fullname,selftext,is_video,title,is_original_content,media_embed"
+        header_out_csv = "author_fullname,text,is_video,title,is_original_content,media_embed"
         f_out.write(header_out_csv + '\n')
         # read from locally stored JSON file
         if is_read_local_json:
@@ -89,6 +89,7 @@ def convert_lowercase(in_str):
     """
     return str(in_str).lower()
 
+def is_empty()
 
 if __name__ == "__main__":
     # URL that needs to be crawled for JSON data object. Should return jSON
