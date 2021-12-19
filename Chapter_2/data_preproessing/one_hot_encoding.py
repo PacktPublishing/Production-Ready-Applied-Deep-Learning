@@ -2,14 +2,12 @@
 
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder
 from tabulate import tabulate
 
-############################
-# START of ORDINAL ENCODING
-############################
-# label encoder instance
-labelencoder = LabelEncoder()
+####################################################################
+# START of PREPARATION of NEW FEATURE "is_artificial_intelligence"
+####################################################################
 # output file that will include new column "is_artificial_intelligence"
 file_out = "./research_interest_onehot.csv"
 # output file pointer
@@ -21,8 +19,6 @@ f.write(header + "\n")
 df = pd.read_csv("../google_scholar/output.csv")
 print(list(df))
 lst_ds = ["data_science", "machine_learning", "artificial_intelligence", "data_mining"]
-# hold all unique research interest
-lst_global_research = []
 # iterate each line of data frame
 for index, row in df.iterrows():
     # default value if an author is in artificial intelligence is zero (for new column is_artificial_intelligence)
@@ -37,42 +33,42 @@ for index, row in df.iterrows():
     curr_research_interest = str(row['research_interest']).replace("##", " ").replace("_", " ")
     # iterate each of the research interest and add to global list
     for j in lst_research:
-        # create new column is_artificial_intelligence: if an author is in artificial_intelligence,mark it as yes
+        # create new column is_artificial_intelligence: if an author is
+        # in artificial_intelligence, mark it as yes
         if j in lst_ds:
             is_artificial_intelligence = "yes"
         # append individual research interest to global (ordinal encoding purpose)
-        lst_global_research.append(j)
-    curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names},{is_artificial_intelligence}"
+    curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names}" \
+                f",{is_artificial_intelligence}"
     # write to output file (One Hot encoding purpose)
     f.write(curr_line + "\n")
-# convert global research interest list to dataframe
-df_research = pd.DataFrame(lst_global_research, columns=["research_interest"])
-# add a new column ri_integer that has the ordinal encoding
-df_research['ri_integer'] = labelencoder.fit_transform(df_research['research_interest'])
-print(tabulate(df_research.head(10), headers="keys",  tablefmt="psql"))
+
 # close file
 f.close()
-############################
-# END of ORDINAL ENCODING
-############################
+####################################################################
+# END of PREPARATION of NEW FEATURE "is_artificial_intelligence"
+####################################################################
 
 ############################
 # START of ONE-HOT ENCODING
 ############################
 
-# read the file that has new column
+# read the file "research_interest_onehot.csv" that has new column
 df_new = pd.read_csv(file_out)
 # one hot encoder instance
 enc = OneHotEncoder(handle_unknown='ignore')
-# limited
-# pass either "research_interest" or "ri_integer"
+# pass either "is_artificial_intelligence" or "ri_integer"
 enc_df = pd.DataFrame(enc.fit_transform(df_new[['is_artificial_intelligence']]).toarray())
 # merge
 df_merge = df_new.join(enc_df)
-print("merged")
-print(tabulate(df_merge.head(10), headers="keys", tablefmt="psql"))
-print("only df having new column")
+print("------------------------------------------------------------------------------------------------")
+print("Only df having new column => is_artificial_intelligence (see last column)")
+print("------------------------------------------------------------------------------------------------")
 print(tabulate(df_new.head(10), headers="keys"))
+print("------------------------------------------------------------------------------------------------")
+print("Merged with one-hot encoded having new column => is_artificial_intelligence (see last three columns)")
+print("------------------------------------------------------------------------------------------------")
+print(tabulate(df_merge.head(10), headers="keys", tablefmt="psql"))
 
 ############################
 # END of ONE-HOT ENCODING
