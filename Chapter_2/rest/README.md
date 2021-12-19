@@ -1,4 +1,5 @@
-- This folder contains the py file to call rest API to collect JSON data.
+- This folder contains the py file [get_rest_api_data.py](./get_rest_api_data.py) to call rest API to collect
+  JSON data, parse it, extract required features from it.
 
 - A copy of the locally stored JSON reddit file collected using REST API request
 is located [here](./reddit.json)
