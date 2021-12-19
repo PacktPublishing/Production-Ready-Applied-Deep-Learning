@@ -48,12 +48,16 @@ def json_to_csv(url, in_file, out_file):
             text = clean_text(text)
             # convert string to lower case
             text = convert_lowercase(text)
+            # replace missing (empty) text with "na"
+            text = is_empty(text)
             # "title" -> needs set of cleaning similar to one did for the feature "text"
             title = remove_comma(data_obj["title"])
             # remove non alpha-numeric characters
             title = clean_text(title)
             # convert string to lower case
             title = convert_lowercase(title)
+            # replace missing (empty) title with "na"
+            title = is_empty(title)
             is_video = remove_comma(data_obj["is_video"])
             upvote_ratio = remove_comma(data_obj["upvote_ratio"])
             is_original = remove_comma(data_obj["is_original_content"])
@@ -89,7 +93,15 @@ def convert_lowercase(in_str):
     """
     return str(in_str).lower()
 
-def is_empty()
+
+def is_empty(in_str):
+    """ return empty string with default value "na"
+    """
+    if len(str(in_str)) > 0:
+        return str(in_str)
+    else:
+        return "na"
+
 
 if __name__ == "__main__":
     # URL that needs to be crawled for JSON data object. Should return jSON
