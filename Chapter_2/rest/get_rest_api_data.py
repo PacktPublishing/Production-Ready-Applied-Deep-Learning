@@ -1,5 +1,6 @@
 # This script collects the API data from Reddit
 import requests
+import urllib.request as request
 import traceback
 import json
 
@@ -9,14 +10,24 @@ def json_to_csv(url, out_file):
         # file for output csv
         f = open(out_file, "w")
         # request object. If you get "Too Many requests" error, try after 5 minutes
-        resp = requests.get(url=url)
-        print(type(resp))
-        # Json object
-        json_data = resp.json()
-        print(type(json_data))
-        print(json_data)
-        # The json structure has the actual data inside "data" -> "children"
-        json_children = json_data["data"]["children"]
+        # resp = requests.get(url=url)
+        # print(type(resp))
+        # # Json object
+        # json_data = resp.json()
+        # print(type(json_data))
+        # print(json_data)
+        # # The json structure has the actual data inside "data" -> "children"
+        # # json_children = json_data["data"]["children"]
+        # json_data = json.load(resp)
+
+        response = request.urlopen(url)
+        source = response.read()
+        json_data = json.loads(source)
+        type(json_data)
+        json_data.keys()
+        type(json_data['data'])
+        json_data['data'].keys()
+        json_children = json_data['data']['children']
         print(json_children)
         print("======")
         # iterate each children data
@@ -30,7 +41,7 @@ def json_to_csv(url, out_file):
             is_original = remove_comma(i["is_original_content"])
             media_embed = remove_comma(i["media_embed"])
             # concatenate all features
-            curr_line =  f"{author},{text},{category},{title},{upvote_ratio},{is_original},{media_embed}"
+            curr_line = f"{author},{text},{category},{title},{upvote_ratio},{is_original},{media_embed}"
             f.write(curr_line + "\n")
 
         f.close()
@@ -41,7 +52,7 @@ def json_to_csv(url, out_file):
 def remove_comma(in_str):
     """ Remove comma from given string
     """
-    return in_str.replace(",", " ").replace("  "," ")
+    return in_str.replace(",", " ").replace("  ", " ")
 
 
 if __name__ == "__main__":

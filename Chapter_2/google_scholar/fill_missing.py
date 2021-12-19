@@ -18,6 +18,7 @@ def fill_missing_values(in_file, out_file):
 
 
 if __name__ == "__main__":
+    # crawled google scholar file
     in_file = "./output.csv"
     out_file = "./output_fillna.csv"
     fill_missing_values(in_file, out_file)
