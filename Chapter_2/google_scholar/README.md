@@ -7,10 +7,10 @@
 - Fill missing values with code [fill_missing.py](./fill_missing.py).
      
 
-   Input File of script `fill_missing.py`:
+Input File of script `fill_missing.py`:
 
 https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/google_scholar/output.csv
 
-   Output File of script `fill_missing.py`:
+Output File of script `fill_missing.py`:
    
-   https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/google_scholar/output_fillna.csv
+https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/google_scholar/output_fillna.csv
