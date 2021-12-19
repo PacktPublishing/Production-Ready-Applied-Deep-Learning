@@ -1,10 +1,12 @@
 # Purpose of the script
-# How to create bag of words from text column
-# How to create term-frequency and inverse document frequency (tf-idf)
+# --------------------
+# (1) Using feature "research_interest" show how to create bag-of-words (i.e., word tokens). Then remove stop-words
+#     and apply stemming to word tokens.
+# (2) How to create term-frequency and inverse document frequency (tf-idf) for feature "research_interest"
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 import nltk
-from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 import re
 import traceback
@@ -17,6 +19,8 @@ print(stopwords.words('english'))
 stop_words = set(stopwords.words('english'))
 # list contains all the research interest from all the authors
 lst_research_interest = []
+# porter stemmer for stemming word tokens
+ps = PorterStemmer()
 
 
 def create_bow_with_nltk(in_file, out_file):
@@ -42,8 +46,10 @@ def create_bow_with_nltk(in_file, out_file):
             # TODO: add stop words filtering before doing tokenization
             # word tokenize.
             curr_research_int_token = word_tokenize(curr_research_interest)
+            # remove stop words from the word tokens
             curr_filtered_research = [w for w in curr_research_int_token if not w.lower() in stop_words]
-            curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names},{curr_filtered_research}"
+            curr_stem_research = [ps.stem(w) for w in curr_filtered_research]
+            curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names},{curr_stem_research}"
             # write to csv file
             f.write(curr_line + "\n")
         # close the output file object
@@ -77,7 +83,8 @@ if __name__ == "__main__":
     create_tf_idf_with_scikit()
 
 ##############################################################################
-# Note: The output file "output_bow.csv" now has research interest text convert into bag of words.
+# Note: The output file "output_bow.csv" now has research interest text convert into bag-of-words after removing stop words
+# and applied stemming.
 # For example: anomaly_detection converted to ["anomaly", detection"]
 
 # Term Frequency
@@ -88,19 +95,26 @@ if __name__ == "__main__":
 # Term frequency is how common a word is, inverse document frequency (IDF) is how unique or rare a word is.
 # IDF(t) = log_e(Total number of documents / Number of documents with term t in it)
 ##############################################################################
-# Stop words
+# Stop words | Stemming output example
 ##############################################################################
 # Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['security', 'and', 'privacy', 'preservation', 'for', 'wireless', 'networks']
-#  To
+# To (after stopword)
 # Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['security', 'privacy', 'preservation', 'wireless', 'networks']
+# To (after stemming)
+# Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['secur', 'privaci', 'preserv', 'wireless', 'network']
+############
 # Michael Chau,business.hku.hk,University of Hong Kong,nan,['information', 'systems', 'web', 'mining', 'data', 'mining', 'it', 'education']
-# To
+# To (after stopword)
 # Michael Chau,business.hku.hk,University of Hong Kong,nan,['information', 'systems', 'web', 'mining', 'data', 'mining', 'education']
+# To (after stemming)
+# Michael Chau,business.hku.hk,University of Hong Kong,nan,['inform', 'system', 'web', 'mine', 'data', 'mine', 'educ']
+############
 # Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['communication', 'journalism', 'mass', 'media', 'psychology', 'of', 'the', 'media', 'audience']
-# To
+# To (after stopword)
 # Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['communication', 'journalism', 'mass', 'media', 'psychology', 'media', 'audience']
+# To (after stemming)
+# Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['commun', 'journal', 'mass', 'media', 'psycholog', 'media', 'audienc']
 ##############################################################################
 # Future improvement
 #############################################################################
-# - Also, apply the stemming concept with Bag of Words.
-#   (Stemming is the process of reducing a word to word stem.)
+# N/A
