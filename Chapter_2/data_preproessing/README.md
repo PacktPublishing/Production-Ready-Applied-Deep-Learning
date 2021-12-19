@@ -26,7 +26,8 @@ Output File for the code:
     in ["yes", "no"]. One hot encoding produced two columns "0" and "1" representing "no" and "yes". "0" column shows the value 1, is_artificial_intelligence is
     "no." If "1" column shows the value 1, then is_artificial_intelligence is "yes."     
 
-- [Code](./normalize.py) for Normalize a feature.
+- [Code](./normalize.py) to normalize feature `research_interest` in google scholar data set. If research interest belongs to  
+  data_science or machine_learning, they are normalized to artificial_intelligence.
 
 - [Code](./pca.py) for PCA analysis of features with HR data set from Kaggle located [here](https://www.kaggle.com/jacksonchou/hr-data-for-analytics/version/1)
  
