@@ -6,14 +6,15 @@ import csv
 
 def fill_missing_values(in_file, out_file):
     try:
+        # Read the Google Scholar crawled & saved CSV file "output.csv"
         df = pd.read_csv(in_file)
-        df.affiliation.fillna(value="not found", inplace=True)
-        # check for "not found" values
+        # Fill out the empty "affiliation" with "na"
+        df.affiliation.fillna(value="na", inplace=True)
+        # verify for "na" values which is the default for missing
         print(df["affiliation"].unique())
         # writing to csv file
         df.to_csv(out_file,  encoding='utf-8', index=False)
-
-    except Exception as e:
+    except:
         traceback.print_exc()
 
 

@@ -8,7 +8,8 @@ dict_norm = {"data_science": "artificial_intelligence",
 
 
 def join_strings(conc, curr, dict_norm):
-        """ :param conc: concatenate
+        """ Normalize based on dictionary
+            :param conc: concatenate
             :param curr: current string
             :return:
         """
@@ -36,10 +37,7 @@ def normalize_research(in_file, out_file):
         # header for output file
         header = "author_name,email,affiliation,coauthors_names,research_interest_normalized"
         for index, row in df.iterrows():
-            curr_authorname = row['author_name']
-            curr_email = row['email']
-            curr_affiliation = row['affiliation']
-            curr_coauthors_names = row['coauthors_names']
+            # split delimiter ## to get individual research_interest like machine_learning or data_science
             curr_research_interest = str(row['research_interest']).split("##")
             conc_research_norm = ""  # reset
             for i in curr_research_interest:
@@ -48,6 +46,10 @@ def normalize_research(in_file, out_file):
                     conc_research_norm = join_strings(conc_research_norm, i, dict_norm)
                 else:
                     conc_research_norm = join_strings(conc_research_norm, i, dict_norm)
+            curr_authorname = row['author_name']
+            curr_email = row['email']
+            curr_affiliation = row['affiliation']
+            curr_coauthors_names = row['coauthors_names']
             # split the normalized research interest, then remove duplicates post normalization
             set_research_norm = set(list(conc_research_norm.split("##")))
             conc_research_norm_str = "##".join(set_research_norm)

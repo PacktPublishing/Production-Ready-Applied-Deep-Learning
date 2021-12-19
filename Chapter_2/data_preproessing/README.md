@@ -10,12 +10,12 @@ Output File for the code:
     
     https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/google_scholar/output_fillna.csv
 
-- Code [bag_of_words_and_tf_idf.py](./bag_of_words_and_tf_idf.py) for bag-of-words. `word_tokenize` from NLTK library is applied to `research_interest`
+- Code [bag_of_words_tf_idf.py](./bag_of_words_tf_idf.py) for bag-of-words. `word_tokenize` from NLTK library is applied to `research_interest`
   feature from google scholar and saved the bag-of-words as feature `research_bag_of_words` in output file 
   CSV file [output_bow.csv](./output_bow.csv). The results for `research_interest` tf-idf scores are shown in 
   image [tf-idf-result-ri.png](./images/tf-idf-result-ri.png)
 
-- Code [bag_of_words_and_tf_idf.py](./bag_of_words_and_tf_idf.py) for Term Frequency-Inverse Document Frequency (tf-idf).
+- Code [bag_of_words_tf_idf.py](./bag_of_words_tf_idf.py) for Term Frequency-Inverse Document Frequency (tf-idf).
 
 - Code [ordinal_encoding.py](./ordinal_encoding.py) for Ordinal Encoding.
 

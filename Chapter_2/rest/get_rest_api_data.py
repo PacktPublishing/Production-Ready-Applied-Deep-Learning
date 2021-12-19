@@ -44,7 +44,7 @@ def json_to_csv(url, in_file, out_file):
             text = remove_comma(data_obj["selftext"])
             # replace new line in the text file. Otherwise the line will split into multiple in the output CSV file.
             text = text.replace("\n", "")
-            # remove non alpha-numeric characters
+            # remove non alpha-numeric characters for feature "text"
             text = clean_text(text)
             # convert string to lower case
             text = convert_lowercase(text)
@@ -52,7 +52,7 @@ def json_to_csv(url, in_file, out_file):
             text = is_empty(text)
             # "title" -> needs set of cleaning similar to one did for the feature "text"
             title = remove_comma(data_obj["title"])
-            # remove non alpha-numeric characters
+            # remove non alpha-numeric characters from feature "title"
             title = clean_text(title)
             # convert string to lower case
             title = convert_lowercase(title)
@@ -80,16 +80,16 @@ def remove_comma(in_str):
 def clean_text(in_str):
     """ Remove unwanted characters like ", [, ], ?
     :param in_str:
-    :return:
+    :return: String
     """
     clean_txt = re.sub(r'\W+', ' ', in_str)
     return clean_txt
 
 
 def convert_lowercase(in_str):
-    """ Convert a given string to lower case
-    :param in_str:
-    :return:
+    """ Convert a given string to lowercase
+    :param in_str: input text
+    :return: string
     """
     return str(in_str).lower()
 

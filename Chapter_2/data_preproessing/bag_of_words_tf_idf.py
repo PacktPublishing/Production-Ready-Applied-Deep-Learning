@@ -4,14 +4,13 @@
 #     and apply stemming to word tokens.
 # (2) How to create term-frequency and inverse document frequency (tf-idf) for feature "research_interest"
 import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
-import re
 import traceback
 from nltk.corpus import stopwords
-
+# download nltk corpuses
 nltk.download('punkt')
 nltk.download('stopwords')
 print(stopwords.words('english'))
@@ -28,7 +27,7 @@ def create_bow_with_nltk(in_file, out_file):
         a csv file named "output_bow.csv"
     """
     try:
-        # read csv file
+        # read csv file of Google Scholar data set (output.csv)
         df = pd.read_csv(in_file)
         # write csv file
         f = open(out_file, 'w')
@@ -41,15 +40,20 @@ def create_bow_with_nltk(in_file, out_file):
             curr_email = row['email']
             curr_affiliation = row['affiliation']
             curr_coauthors_names = row['coauthors_names']
-            curr_research_interest = str(row['research_interest']).replace("##", " ").replace("_", " ")
+            curr_research_interest = str(row['research_interest'])\
+                .replace("##", " ")\
+                .replace("_", " ")
             lst_research_interest.append(curr_research_interest)
-            # TODO: add stop words filtering before doing tokenization
             # word tokenize.
             curr_research_int_token = word_tokenize(curr_research_interest)
             # remove stop words from the word tokens
-            curr_filtered_research = [w for w in curr_research_int_token if not w.lower() in stop_words]
+            curr_filtered_research = [w for w in curr_research_int_token\
+                                      if not w.lower() in stop_words]
+            # word stemming (porter stemmer)
             curr_stem_research = [ps.stem(w) for w in curr_filtered_research]
-            curr_line = f"{curr_authorname},{curr_email},{curr_affiliation},{curr_coauthors_names},{curr_stem_research}"
+            # construct line having all features
+            curr_line = f"{curr_authorname},{curr_email},{curr_affiliation}," \
+                        f"{curr_coauthors_names},{curr_stem_research}"
             # write to csv file
             f.write(curr_line + "\n")
         # close the output file object
