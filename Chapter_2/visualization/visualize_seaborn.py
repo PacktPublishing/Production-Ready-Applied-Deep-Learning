@@ -2,10 +2,9 @@
 
 import traceback
 import pandas as pd
-from tabulate import tabulate
-from matplotlib import pyplot as plt
 import seaborn as sns
-import numpy as np
+from matplotlib import pyplot as plt
+from tabulate import tabulate
 
 
 def seaborn_line_histogram(in_file):
@@ -33,9 +32,10 @@ def seaborn_line_histogram(in_file):
         plt.xticks(rotation=90)
         # show the actual plot
         plt.show()
-        ####################
+        ###########################
         # HISTOGRAM CHART PLOTTING
-        ####################
+        ###########################
+        # plot histogram bars with top 10 states mean distribution count of vaccine
         sns.distplot(df_mean_sorted_top10['mean_1'], kde=False)
         plt.show()
 

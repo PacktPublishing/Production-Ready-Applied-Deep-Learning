@@ -3,15 +3,15 @@
 # (3) We will plot the weekly mean distribution data from (2) as bar chart and pie chart
 
 import traceback
-import pandas as pd
-from tabulate import tabulate
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+from tabulate import tabulate
 
 
 def matplotlib_pie_bar(in_file):
     try:
-        # read csv file
+        # read vaccination csv file "cdc-moderna-covid-19-vaccine-distribution-by-state.csv"
         df = pd.read_csv(in_file)
         # pretty print of data
         print(tabulate(df.head(10), headers='keys', tablefmt='psql'))
@@ -43,14 +43,14 @@ def matplotlib_pie_bar(in_file):
         ####################
         x_states = dict_top10.keys()
         y_vaccine_dist_1 = dict_top10.values()
-
-        fig = plt.figure(figsize=(12, 6))
+        fig = plt.figure(figsize=(12, 6))  # figure chart with size
         ax = fig.add_subplot(111)
+        # bar values filling with x-axis/y-axis values
         ax.bar(np.arange(len(x_states)), y_vaccine_dist_1, log=1)
+        # x-axis ticks range and labels
         ax.set_xticks(np.arange(len(x_states)))
         ax.set_xticklabels(x_states, rotation=45, zorder=100)
         plt.show()
-
     except Exception as e:
         traceback.print_exc()
 
