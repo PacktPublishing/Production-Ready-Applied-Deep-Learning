@@ -117,31 +117,3 @@ if __name__ == "__main__":
     create_bow_with_nltk(in_file, out_file_word_token, out_file)
     # create tf-idf for feature research interest with SCIKIT-LEARN
     create_tf_idf_with_scikit()
-
-##############################################################################
-# Note: The
-
-##############################################################################
-# Stop words | Stemming output example
-##############################################################################
-# Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['security', 'and', 'privacy', 'preservation', 'for', 'wireless', 'networks']
-# To (after stopword)
-# Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['security', 'privacy', 'preservation', 'wireless', 'networks']
-# To (after stemming)
-# Mohamed M. E. A. Mahmoud,tntech.edu,Tennessee Tech University,nan,['secur', 'privaci', 'preserv', 'wireless', 'network']
-############
-# Michael Chau,business.hku.hk,University of Hong Kong,nan,['information', 'systems', 'web', 'mining', 'data', 'mining', 'it', 'education']
-# To (after stopword)
-# Michael Chau,business.hku.hk,University of Hong Kong,nan,['information', 'systems', 'web', 'mining', 'data', 'mining', 'education']
-# To (after stemming)
-# Michael Chau,business.hku.hk,University of Hong Kong,nan,['inform', 'system', 'web', 'mine', 'data', 'mine', 'educ']
-############
-# Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['communication', 'journalism', 'mass', 'media', 'psychology', 'of', 'the', 'media', 'audience']
-# To (after stopword)
-# Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['communication', 'journalism', 'mass', 'media', 'psychology', 'media', 'audience']
-# To (after stemming)
-# Albert C. Gunther,wisc.edu,University of Wisconsin-Madison,Douglas Storey,['commun', 'journal', 'mass', 'media', 'psycholog', 'media', 'audienc']
-##############################################################################
-# Future improvement
-#############################################################################
-# N/A
