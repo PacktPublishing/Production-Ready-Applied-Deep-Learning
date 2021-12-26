@@ -31,13 +31,6 @@ word_count = {}
 BoW = []
 
 
-def clean(in_str):
-    """ Clean the given string.
-    """
-    return str(in_str)
-        #.replace("[", "").replace("]", "").replace("\n", "")
-
-
 def create_bow_with_nltk(in_file, out_file_word_token, out_file):
     """ Create bag-of-words for feature "research_interest" from google scholar data set and saved into
         a csv file named "output_bow.csv"
