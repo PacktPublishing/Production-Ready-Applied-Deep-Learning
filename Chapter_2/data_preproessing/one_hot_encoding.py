@@ -61,6 +61,8 @@ enc = OneHotEncoder(handle_unknown='ignore')
 enc_df = pd.DataFrame(enc.fit_transform(df_new[['is_artificial_intelligence']]).toarray())
 # merge
 df_merge = df_new.join(enc_df)
+# renamed columns related one-hot-encoding
+df_merge.columns = ["author_name", "email", "affiliation", "coauthors_names", "is_artificial_intelligence", "no", "yes"]
 print("------------------------------------------------------------------------------------------------")
 print("Only df having new column => is_artificial_intelligence (see last column)")
 print("------------------------------------------------------------------------------------------------")
@@ -69,7 +71,11 @@ print("-------------------------------------------------------------------------
 print("Merged with one-hot encoded having new column => is_artificial_intelligence (see last three columns)")
 print("------------------------------------------------------------------------------------------------")
 print(tabulate(df_merge.head(10), headers="keys", tablefmt="psql"))
-
+print("------------------------------------------------------------------------------------------------")
+print("Print only is_artificial_intelligence and its related one-hot-encoder")
+df_one_hot = df_merge[["is_artificial_intelligence", "no", "yes"]]
+print(tabulate(df_one_hot.head(10), headers="keys", tablefmt="psql"))
+print("------------------------------------------------------------------------------------------------")
 ############################
 # END of ONE-HOT ENCODING
 ############################
