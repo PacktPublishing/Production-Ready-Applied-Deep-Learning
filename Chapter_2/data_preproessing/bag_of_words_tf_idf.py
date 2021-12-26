@@ -3,8 +3,7 @@
 # (1) Using feature "research_interest" show how to create bag-of-words
 #     Also research interest word token creation after removing stop-words and apply stemming.
 #     Output file "output_bow.csv" has research interest convert into bag-of-words.
-# (2) How to create word-frequency is shown (see variable "word_count").
-# (3) Inverse document frequency (tf-idf) for feature "research_interest" implemented
+# (2) Inverse document frequency (tf-idf) for feature "research_interest" implemented
 #     (see method create_tf_idf_with_scikit).
 
 import pandas as pd
@@ -25,8 +24,6 @@ stop_words = set(stopwords.words('english'))
 lst_research_interest = []
 # porter stemmer for stemming word tokens
 ps = PorterStemmer()
-# word count (word frequency)
-word_count = {}
 # Bag-of-Words (BoW)
 BoW = []
 
@@ -57,12 +54,6 @@ def create_bow_with_nltk(in_file, out_file_word_token, out_file):
             lst_research_interest.append(curr_research_interest)
             # word tokenize
             curr_research_int_token = word_tokenize(curr_research_interest)
-            # word-frequency: iterate each token in research interest to build word-count
-            for w in curr_research_int_token:
-                if w in word_count.keys():
-                    word_count[w] += 1
-                else:
-                    word_count[w] = 1
             # remove stop words from the word tokens
             curr_filtered_research = [w for w in curr_research_int_token\
                                       if not w.lower() in stop_words]
