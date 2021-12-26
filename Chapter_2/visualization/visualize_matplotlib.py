@@ -18,15 +18,15 @@ def matplotlib_pie_bar(in_file):
         # group by state and output sequence is converted to dataframe
         df_mean = df.groupby(["jurisdiction"])["_1st_dose_allocations"].mean().reset_index()
         # rename column names of data frame
-        df_mean.columns = ["state", "mean_1"]
+        df_mean.columns = ["state", "count_vaccine"]
         # sort descending by # vaccine dose 1
-        df_mean_sorted = df_mean.sort_values(by=['mean_1'], ascending=False)
+        df_mean_sorted = df_mean.sort_values(by=['count_vaccine'], ascending=False)
         # top 10 stats by largest mean
         df_mean_sorted_top10 = df_mean_sorted[0:10]
         # top 10 sorted mean print
         print(tabulate(df_mean_sorted_top10, headers='keys', tablefmt='psql'))
         # convert top 10 states dataframe to dictionary
-        dict_top10 = dict(zip(df_mean_sorted_top10.state, df_mean_sorted_top10.mean_1))
+        dict_top10 = dict(zip(df_mean_sorted_top10.state, df_mean_sorted_top10.count_vaccine))
         ####################
         # PIE CHART PLOTTING
         ####################

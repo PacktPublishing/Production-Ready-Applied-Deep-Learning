@@ -16,9 +16,9 @@ def seaborn_line_histogram(in_file):
         # group by state and output sequence is converted to dataframe
         df_mean = df.groupby(["jurisdiction"])["_1st_dose_allocations"].mean().reset_index()
         # rename column names of data frame
-        df_mean.columns = ["state", "mean_1"]
+        df_mean.columns = ["state", "count_vaccine"]
         # sort descending by # vaccine dose 1
-        df_mean_sorted = df_mean.sort_values(by=['mean_1'], ascending=False)
+        df_mean_sorted = df_mean.sort_values(by=['count_vaccine'], ascending=False)
         # top 10 stats by largest mean
         df_mean_sorted_top10 = df_mean_sorted[0:10]
         # top 10 sorted mean print
@@ -27,7 +27,7 @@ def seaborn_line_histogram(in_file):
         # LINE CHART PLOTTING
         ####################
         # line plot
-        sns.lineplot(data=df_mean_sorted_top10, x="state", y="mean_1")
+        sns.lineplot(data=df_mean_sorted_top10, x="state", y="count_vaccine")
         # rotate x-axis labels
         plt.xticks(rotation=90)
         # show the actual plot
@@ -36,7 +36,7 @@ def seaborn_line_histogram(in_file):
         # HISTOGRAM CHART PLOTTING
         ###########################
         # plot histogram bars with top 10 states mean distribution count of vaccine
-        sns.distplot(df_mean_sorted_top10['mean_1'], kde=False)
+        sns.displot(df_mean_sorted_top10['count_vaccine'], kde=False)
         plt.show()
 
     except Exception as e:
