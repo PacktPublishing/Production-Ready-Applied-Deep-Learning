@@ -53,7 +53,7 @@ if is_debug:
     print(X_std)
     print(X_std.shape)
 
-# cumulative explained variance
+# cumulative explained variance (cummulative sum explained by i + 1)
 plt.plot(np.cumsum(pca.explained_variance_ratio_))
 # x axis and y axis scale
 plt.xlim(0, 8, 1)

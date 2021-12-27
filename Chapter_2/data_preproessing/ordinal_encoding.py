@@ -48,4 +48,5 @@ for index, row in df.iterrows():
 # convert global research interest list to dataframe
 df_research = pd.DataFrame(lst_global_research, columns=["research_interest"])
 # add a new column ri_integer that has the ordinal encoding
-df_research['ri_integer'] = labelencoder.fit_transform(df_research['research_interest'])
+df_research['encoded_research_interest'] = labelencoder.fit_transform(df_research['research_interest'])
+print(tabulate(df_research.head(10), headers="keys", tablefmt="psql") )
