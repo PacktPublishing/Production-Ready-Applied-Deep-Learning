@@ -11,7 +11,7 @@ from tabulate import tabulate
 # if set, it prints some variables
 is_debug = False
 # set this to true if you want to plot Principal Components visualization in browser using pyplot
-is_plot = True
+is_plot = False
 
 # label encoder instance
 labelencoder = LabelEncoder()
