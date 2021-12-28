@@ -1,5 +1,9 @@
 import pandas as pd
 import traceback
+from tabulate import tabulate
+from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+
 
 # dictionary that helps to normalize
 dict_norm = {"data_science": "artificial_intelligence",
@@ -62,8 +66,28 @@ def normalize_research(in_file, out_file):
         traceback.print_exc()
 
 
+def normalize_numeric(in_file_numeric):
+    """ Normalize numeric values in range 0 to 1 with example from Corona Vaccine data set
+    """
+    df_in = pd.read_csv(in_file_numeric)
+    # Step 1: calculate state-wise mean number for weekly corora vaccine distribution
+    df = df_in.groupby("jurisdiction")["_1st_dose_allocations"]\
+        .mean().to_frame("mean_vaccine_count").reset_index()
+    print("State-wise Mean calculated for # vaccine distributed weekly")
+    print(tabulate(df.head(10), tablefmt="psql", headers="keys"))
+    # Step 2: calculate normalized mean vaccine count
+    df["norm_vaccine_count"] = df["mean_vaccine_count"] / df["mean_vaccine_count"].max()
+    print(tabulate(df.head(10), tablefmt="psql", headers="keys"))
+
+
 if __name__ == "__main__":
+    # Input file of Google Scholar
     in_file = "../google_scholar/output.csv"
+    # Output file for normalized research_interest field in Google Scholar
     out_file = "./output_normalize.csv"
     # create bag of words for feature research interest with NLTK
-    normalize_research(in_file, out_file)
+    # normalize_research(in_file)
+
+    # Input file for weekly corona vaccine distribution
+    in_file_corona = "../csv_data/data/cdc-moderna-covid-19-vaccine-distribution-by-state.csv"
+    normalize_numeric(in_file_corona)
