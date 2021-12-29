@@ -9,3 +9,4 @@ seaborn
 numpy
 plotly
 opencv-python
+fuzzywuzzy[speedup]
