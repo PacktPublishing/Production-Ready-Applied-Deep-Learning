@@ -35,9 +35,9 @@ df_features = df_features.drop(['sales', 'salary'], axis = 1)
 df_x = df_features[["satisfaction_level", "last_evaluation", "number_project", "average_montly_hours", "time_spend_company"\
                       , "Work_accident", "promotion_last_5years", "sales_int", "salary_int"]]
 df_y = df_features[["left"]]
-
-X = df_x.iloc[:,0:9].values
-y = df_y.iloc[:,0].values
+# returns numpy array
+X = df_x.iloc[:, 0:9].values
+y = df_y.iloc[:, 0].values
 
 if is_debug:
     print(df_features.dtypes)
@@ -70,9 +70,9 @@ plt.xlabel('# components')
 plt.ylabel('Cumulative explained variance')
 # show the plot
 plt.show()
-################################
-# VISUALIZE PCA COMPONENTS AS MATRIX
-################################
+##############################################################################################
+# VISUALIZE PCA COMPONENTS AS MATRIX. SET VARIABLE is_plot = TRUE FOR BELOW PLOT TO WORD
+##############################################################################################
 if is_plot:
     features = ['satisfaction_level', 'last_evaluation', 'number_project', 'average_montly_hours', 'time_spend_company'
         ,'Work_accident', 'promotion_last_5years', 'sales_int', 'salary_int']
@@ -95,7 +95,8 @@ if is_plot:
     # mark diagonal as invisible
     fig.update_traces(diagonal_visible=False)
     fig.show()
-
+##############################
 # Observation from plot:
+##############################
 # -> Only first two principal components are worth to be used as new features for Machine Learning Algorithm
 #    as it covers most of the variance as per the plot.
