@@ -60,7 +60,7 @@ RUN mamba install --yes 'elephas' && \
       fix-permissions "${CONDA_DIR}" && \
       fix-permissions "/home/${NB_USER}"
 
-RUN conda install --yes pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
+RUN conda install --yes pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch
 
 RUN conda install --yes -c conda-forge pytorch-lightning
 
