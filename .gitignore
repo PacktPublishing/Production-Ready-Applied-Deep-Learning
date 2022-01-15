@@ -5,6 +5,11 @@
 
 ../.idea
 
+# notebook-related
+**/.keras
+**/.local
+**/lightning_logs
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
