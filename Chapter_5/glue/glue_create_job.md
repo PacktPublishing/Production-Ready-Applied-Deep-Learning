@@ -12,7 +12,7 @@ This document explains the steps that need to create a new AWS Glue Job.
 
 Go to [Glue](https://us-east-2.console.aws.amazon.com/glue/home?region=us-east-2#)
 
-#### Step 2: Create Crawler that takes input data set (csv file) and create a metadata table inside newly created database "db_google_scholar" 
+#### Step 3: Create Crawler that takes input data set (csv file) and create a metadata table inside newly created database "db_google_scholar" 
 
 ![](./glue_crawler_images/glue_crawler_19.png)
 [//]: # (![]&#40;./glue_crawler_images/glue_crawler_18.png&#41;)
@@ -33,7 +33,7 @@ Go to [Glue](https://us-east-2.console.aws.amazon.com/glue/home?region=us-east-2
 ![](./glue_crawler_images/glue_crawler_2.png)
 ![](./glue_crawler_images/glue_crawler_1.png)
 
-#### Step 3: Create a Glue Job. Script [glue_job_google_scholar.py](./glue_job_google_scholar.py) that runs in the job. 
+#### Step 4: Create a Glue Job. Script [glue_job_google_scholar.py](./glue_job_google_scholar.py) that runs in the job. 
 
 ![](./glue_job_create/glue_job_create_29.png)
 ![](./glue_job_create/glue_job_create_27.png)
