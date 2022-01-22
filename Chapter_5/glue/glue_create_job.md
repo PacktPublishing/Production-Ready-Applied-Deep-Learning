@@ -10,12 +10,14 @@ This document explains the steps that need to create a new AWS Glue Job.
 ![](./s3_glue_images/s3_2.png)
 ![](./s3_glue_images/s3_1.png)
 
-Go to [Glue](https://us-east-2.console.aws.amazon.com/glue/home?region=us-east-2#)
+#### Step 2: Create Policy that has necessary permission for Glue and S3 bucket
+
+- To be filled.
 
 #### Step 3: Create Crawler that takes input data set (csv file) and create a metadata table inside newly created database "db_google_scholar" 
 
+Go to [Glue](https://us-east-2.console.aws.amazon.com/glue/home?region=us-east-2#)
 ![](./glue_crawler_images/glue_crawler_19.png)
-[//]: # (![]&#40;./glue_crawler_images/glue_crawler_18.png&#41;)
 ![](./glue_crawler_images/glue_crawler_17.png)
 ![](./glue_crawler_images/glue_crawler_16.png)
 ![](./glue_crawler_images/glue_crawler_15.png)
