@@ -1,6 +1,6 @@
 ### Glue
 
-Four major tasks as shown in [here](./glue_create_job)
+Four major tasks as shown in [here](./glue_create_job.md)
 
 - Step 1: Create a bucket in S3
 - Step 2: Create Policy that has necessary permission for Glue and S3 bucket
