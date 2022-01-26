@@ -1,1 +1,1 @@
-#### Spark related notebooks located in this folder
+#### Spark Introduction notebook located [here](Notebook_PySpark_Introduction.ipynb)
