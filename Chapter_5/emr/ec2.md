@@ -1,5 +1,6 @@
-﻿## 4.3 Amazon Elastic Compute Cloud - EC2
-## Single EC2 with AMI - deep-learning AMI ubuntu - has conda 
+﻿## Amazon Elastic Compute Cloud - EC2
+
+#### Single EC2 with AMI - deep-learning AMI ubuntu - has conda 
 
 Assuming that one has created an AWS account with an email id and logged into aws console (i.e., root user), we are creating an IAM user.
 
