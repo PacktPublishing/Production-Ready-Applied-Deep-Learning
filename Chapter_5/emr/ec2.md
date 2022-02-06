@@ -1,6 +1,6 @@
 ﻿## Amazon Elastic Compute Cloud - EC2
 
-#### Single EC2 with AMI - deep-learning AMI ubuntu - has conda 
+#### Single EC2 with AMI - deep-learning AMI ubuntu with conda 
 
 Assuming that one has created an AWS account with an email id and logged into aws console (i.e., root user), we are creating an IAM user.
 
@@ -11,19 +11,13 @@ Create an account with your email id and then use it to login with below link
 In this section, we create a role, security group with inbound access from one's laptop and then create an ec2 instance with a Deep Learning image for Ubuntu 18.0. Finally, connect to the ec2 instance from the terminal with a .pem file.
 
 
-
 **Activate MFA**
 
 Activate extra security for your account by registering the AWS account with your mobile phone.
 
-
 Click 'Activate MFA'
 
-
-
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.001.png)
-
-
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.002.png)
 
@@ -37,7 +31,7 @@ Click 'Activate MFA'
 
 **Create a Role:**
 
-- Click 'Create Role' button in the IAM page below after choosing the 'Roles' in the left pane
+Click 'Create Role' button in the IAM page below after choosing the 'Roles' in the left pane
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.005.png)
 
@@ -78,38 +72,37 @@ Reference: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.
 
 <https://console.aws.amazon.com/>
 
-1. Search for ec2 in the search bar and then hit enter
-1. On the top right, if it is not already in Ohio region, then choose Ohio Region for cheaper pricing of ec2 instances
+2. Search for ec2 in the search bar and then hit enter
+3. On the top right, if it is not already in Ohio region, then choose Ohio Region for cheaper pricing of ec2 instances
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.014.png)
 
-1. Choose the Launch a virtual machine in the provide option as seen below
+4. Choose the Launch a virtual machine in the provide option as seen below
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.015.png)
 
-1. In Step 1, Choose the below image named **Deep Learning AMI (Ubuntu 18.04) Version 48.0**
+5. In Step 1, Choose the below image named **Deep Learning AMI (Ubuntu 18.04) Version 48.0**
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.016.png)
 
 
-
-1. In Step 2, choose fier tier instance **m4.large** and hit 'Next: Configure instance details'
+6. In Step 2, choose fier tier instance **m4.large** and hit 'Next: Configure instance details'
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.017.png)
 
 
-1. In Step 3, Choose default network and subnet. Choose *Number of instances* as 1 since we will have only one node in this EMR cluster. Choose the created role 'ec2-role' in the drop down.
+7. In Step 3, Choose the default network and subnet. Choose the *Number of instances* as 1 since we will have only one node in this EMR cluster. Choose the created role 'ec2-role' in the drop-down.
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.018.png)
 
 (Note: One can enable monitoring by checkboxing the option 'Enable CloudWatch detailed monitoring' but it incurs additional charges for CloudWatch monitoring service)
 
-1. In Step 4 on *Add Storage,* add 100GB in the Size* field. Tick the checkbox *Delete on Termination*
-1. In Step 5 on *Add Tags*, one can add some useful tags for tracking the cost.
+8. In Step 4 on *Add Storage,* add 100GB in the Size* field. Tick the checkbox *Delete on Termination*
+9. In Step 5 on *Add Tags*, one can add some useful tags for tracking the cost.
 
 ` `![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.019.png)
 
-1. Step 6, Choose a Security Group as default one and hit Next.
+10. Step 6, Choose a Security Group as default one and hit Next.
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.020.png)
 
@@ -117,16 +110,13 @@ Reference: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.
 
 Ref: <https://aws.amazon.com/premiumsupport/knowledge-center/ec2-block-or-allow-ips/>
 
-
-
-1. Step 7 is to review the configurations done from past steps and then Launch
+11. Step 7 is to review the configurations done from past steps and then Launch
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.021.png)
 
 (Note. Read the Warning message stated as *Your instance configuration is not eligible for the free usage tier)*
 
-1. In the pop-up, create the key pair and download the .pem file. Download will enable the 'Launch Instance' button. In this case, the downloaded pem file dev.pem.
-
+12. In the pop-up, create the key pair and download the .pem file. Download will enable the 'Launch Instance' button. In this case, the downloaded pem file dev.pem.
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.022.png)
 
@@ -142,7 +132,7 @@ Click on the instance id and copy the ipv4 address of the instance. Click on 'Co
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.025.png)
 
-1. Connect to the ec2 instance created from the terminal application in mac. One can use either iterm2 or Hyper application also.
+13. Connect to the ec2 instance created from the terminal application in mac. One can use either iterm2 or Hyper application also.
 
 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html>
 
@@ -182,3 +172,5 @@ For more examples on importing pytorch and mxnet.
 
 Reference: <https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-tensorflow.html>
 
+Billing can be checked in this below page 
+https://console.aws.amazon.com/billing/home?#/
