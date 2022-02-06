@@ -97,7 +97,7 @@ Reference: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.
 
 (Note: One can enable monitoring by checkboxing the option 'Enable CloudWatch detailed monitoring' but it incurs additional charges for CloudWatch monitoring service)
 
-8. In Step 4 on *Add Storage,* add 100GB in the Size* field. Tick the checkbox *Delete on Termination*
+8. In Step 4 on *Add Storage,* add 100GB in the *Size* field. Tick the checkbox *Delete on Termination*
 9. In Step 5 on *Add Tags*, one can add some useful tags for tracking the cost.
 
 ` `![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.019.png)
@@ -138,15 +138,17 @@ Click on the instance id and copy the ipv4 address of the instance. Click on 'Co
 
 - Provide permission for the downloaded dev.pem file using chmod
 
-*chmod 400 dev.pem*
+
+    chmod 400 dev.pem
 
 - Run below ssh command by replacing with your ip address in the place of x.x.x.x below
 
-*ssh -i ~/Downloads/dev.pem **ubuntu**@x.x.x.x*
+
+    ssh -i ~/Downloads/dev.pem **ubuntu**@x.x.x.x
 
 Example:
 
-*ssh -i ~/Downloads/dev.pem **ubuntu**@52.14.251.9*
+    ssh -i ~/Downloads/dev.pem **ubuntu**@52.14.251.9*
 
 Type yes and press enter button like the example shown below
 
