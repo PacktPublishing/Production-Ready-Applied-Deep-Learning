@@ -4,10 +4,6 @@
 
 - Visit [this](https://whatismyipaddress.com/) website to note down your `ip address`
 
-[//]: # (![]&#40;./images_emr/emr_28.png&#41;  not needed &#40;new cluster page again&#41;)
-[//]: # (![]&#40;./images_emr/emr_27.png&#41;)  not with Advanced option for cluster creation
-[//]: # (![]&#40;./images_emr/emr_26.png&#41;) not with Advanced option for cluster creation
-[//]: # (![]&#40;./images_emr/emr_25.png&#41;) not with Advanced option for cluster creation
 Cluster creation in `Starting` status
 ![](./images_emr/emr_24.png)
 Choose Cluster Nodes and Instances
