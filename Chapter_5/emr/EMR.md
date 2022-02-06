@@ -1,4 +1,6 @@
-#### EMR Setup
+### EMR Setup
+
+// ToDo: Rearrange sequence
 
 - Visit [this](https://whatismyipaddress.com/) website to note down your `ip address`
 
