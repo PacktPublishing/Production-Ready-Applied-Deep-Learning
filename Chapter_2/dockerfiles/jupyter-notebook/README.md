@@ -6,10 +6,10 @@
 
 ###### Build the image. 
 
-    docker build --no-cache -t py3-jupyter-tensorflow .
+    docker build --no-cache -t py3-jupyter .
     
 ###### Run Build
-    docker run -it -p 8888:8888 -v ${PWD}/:/home/jovyan py3-jupyter-tensorflow:latest
+    docker run -it -p 8888:8888 -v ${PWD}/:/home/jovyan py3-jupyter:latest
     
     
   - In the console of last docker run command above, it will show the link 127.0.0.1:8888.
