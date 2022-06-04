@@ -4,7 +4,7 @@ In this chapter, we will understand what Deep Learning (DL) is and how it is sha
 
 By the end of this chapter, you should be able to construct a DL project playbook which clearly describes the goal of the project, milestones, tasks, resource allocation, and timeline.  
 
-Example playbook [!Chapter1-example-playbook.xlsx]
+[Example playbook](Chapter1-example-playbook.xlsx)
 
 
 
