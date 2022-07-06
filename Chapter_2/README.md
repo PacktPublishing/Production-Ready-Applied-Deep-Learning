@@ -23,5 +23,10 @@ Run below command to install needed libraries:
 pip install -r requirements
 ```
 
+# Docker 
+
+In the final sections of this chapter, we discuss docker based environment for Data Science. 
+The instructions how to set up docker are presented.
+To use dockerfile prepared by us please follow instructions located [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles/jupyter-notebook)
 
 
