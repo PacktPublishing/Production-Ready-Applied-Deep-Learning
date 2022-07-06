@@ -11,7 +11,7 @@ data set. Similarly, in case of empty `text` feature in reddit data set, use cus
 [get_rest_api_data.py](./rest/get_rest_api_data.py). 
 
 
-Run below command to install libraries
-
-    pip install -r requirements
-    
+Run below command to install needed libraries:
+'''python
+pip install -r requirements
+'''
