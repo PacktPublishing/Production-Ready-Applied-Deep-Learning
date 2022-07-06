@@ -11,7 +11,17 @@ data set. Similarly, in case of empty `text` feature in reddit data set, use cus
 [get_rest_api_data.py](./rest/get_rest_api_data.py). 
 
 
+# How to start 
+
+We recomend using anaconda to create virtual environments. 
+```python
+conda create --name bookenv python=3.8
+conda activate bookenv
+```
 Run below command to install needed libraries:
 ```python
 pip install -r requirements
 ```
+
+
+
