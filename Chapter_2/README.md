@@ -12,6 +12,6 @@ data set. Similarly, in case of empty `text` feature in reddit data set, use cus
 
 
 Run below command to install needed libraries:
-'''python
+```python
 pip install -r requirements
-'''
+```
