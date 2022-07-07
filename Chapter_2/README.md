@@ -11,7 +11,22 @@ data set. Similarly, in case of empty `text` feature in reddit data set, use cus
 [get_rest_api_data.py](./rest/get_rest_api_data.py). 
 
 
-Run below command to install libraries
+# How to start 
 
-    pip install -r requirements
-    
+We recomend using anaconda to create virtual environments. 
+```python
+conda create --name bookenv python=3.8
+conda activate bookenv
+```
+Run below command to install needed libraries:
+```python
+pip install -r requirements
+```
+
+# Docker 
+
+In the final sections of this chapter, we discuss docker based environment for Data Science. 
+The instructions how to set up docker are presented.
+To use dockerfile prepared by us please follow instructions located [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles/jupyter-notebook)
+
+
