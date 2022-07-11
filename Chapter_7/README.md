@@ -37,7 +37,6 @@ tune.run(
     run_or_experiment = tr_function
     conf={ “num_it”: tune.grid_search([10, 20, 30, 40])})
 ```
-want to find more? don't forget to buy our book. 
 
 Next, part is focused on understanding the behavior of the model with Explainable AI.
 
