@@ -8,6 +8,20 @@ import numpy as np
 import pandas as pd
 from tabulate import tabulate
 
+image_format = 'eps'  # image format to save
+
+SMALL_SIZE = 12
+MEDIUM_SIZE = 15
+BIGGER_SIZE = 30
+
+plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
+plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
+plt.rc('axes', labelsize=BIGGER_SIZE)    # fontsize of the x and y labels
+plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('legend', fontsize=BIGGER_SIZE)    # legend fontsize
+plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
+
 
 def matplotlib_pie_bar(in_file):
     try:
@@ -31,11 +45,13 @@ def matplotlib_pie_bar(in_file):
         # PIE CHART PLOTTING
         ####################
         # colors for pie chart
-        colors = ['orange', 'green', 'cyan', 'skyblue', 'yellow', 'red', 'blue', 'white', 'black', 'pink']
+        colors = ['orange', 'green', 'cyan', 'skyblue', 'yellow', 'red', 'lightblue', 'grey', '#ffcc99', 'pink']
         # pie chart plot
         plt.pie(list(dict_top10.values()), labels=dict_top10.keys(), colors=colors, autopct='%2.1f%%', shadow=True, startangle=90)
         # set axis
         plt.axis('equal')
+        image_name = 'piechart.eps'  # image name
+        plt.savefig(image_name, format=image_format, dpi=1200)
         # show the actual plot
         plt.show()
         ####################
@@ -50,6 +66,10 @@ def matplotlib_pie_bar(in_file):
         # x-axis ticks range and labels
         ax.set_xticks(np.arange(len(x_states)))
         ax.set_xticklabels(x_states, rotation=45, zorder=100)
+        # alternate option without .gcf
+        plt.subplots_adjust(bottom=0.22)
+        image_name = 'barchart.eps'  # image name
+        plt.savefig(image_name, format=image_format, dpi=1200)
         plt.show()
     except Exception as e:
         traceback.print_exc()

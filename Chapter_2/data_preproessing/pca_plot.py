@@ -1,8 +1,15 @@
 import plotly.express as px
 from sklearn.decomposition import PCA
 # Set number of principal components to plot.
+image_format = 'eps'  # image format to save
+
+SMALL_SIZE = 12
+MEDIUM_SIZE = 15
+BIGGER_SIZE = 30
+
+
 # Maximum can be length of variable "features" (i.e., 4)
-NUM_OF_PRINCIPAL_COMPONENTS = 4
+NUM_OF_PRINCIPAL_COMPONENTS = 2
 # Download iris dataset
 df = px.data.iris()
 # Features
