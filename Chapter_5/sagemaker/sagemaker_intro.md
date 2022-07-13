@@ -1,4 +1,7 @@
 ### Introduction to Sagemaker Studio 
+
+The screenshots below show the sample steps from the SageMaker Studio console
+
 1.
 ![Intro](./sagemaker_intro_images/1.png)
 2.
