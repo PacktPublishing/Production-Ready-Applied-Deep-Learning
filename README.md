@@ -27,9 +27,9 @@ By the end of this book, you will fully understand how to convert  a PoC-like de
 
 
 ## Authors 
-* Tomasz (Tom) Palczewski - [https://github.com/tpalczew]
-* Brandon Lee - [https://github.com/ljj7975]
-* Lenin Mookiah - [https://github.com/leninworld]
+* Tomasz (Tom) Palczewski - [https://github.com/tpalczew] - https://www.linkedin.com/in/tomaszpalczewski/
+* Brandon Lee - [https://github.com/ljj7975] - https://www.linkedin.com/in/ljj7975/
+* Lenin Mookiah - [https://github.com/leninworld] - https://www.linkedin.com/in/lenin~/
 
 ## Publisher
 
