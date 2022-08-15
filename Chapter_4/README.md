@@ -35,6 +35,7 @@ if you are doing this for a first time, you will see UI with default page withou
 <p align="center">
   <img src="mlflow_ui.png" width="80%">
 </p>
+
 A few examples of basics of experiment tracking with MLflow are presented [here](mlflow.ipynb) 
 
 # Setting up DVC
