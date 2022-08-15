@@ -73,14 +73,3 @@ creating your EMR cluster in order to edit its inbound rules.
 
 For the remaining, follow the steps under **"Create Security Group that has access to ec2 from your laptop"**
 in ![ec2.md](./ec2.md).
-
-[//]: # (List of all existing security groups)
-[//]: # (![]&#40;./images_emr/emr_10.png&#41;)
-[//]: # (![]&#40;./images_emr/emr_9.png&#41;)
-[//]: # (Continuation from last image, put your ip address with /32 added.)
-[//]: # (![]&#40;./images_emr/emr_8.png&#41;)
-[//]: # (Choose the security group used for EMR master.)
-[//]: # (![]&#40;./images_emr/emr_7.png&#41;)
-[//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
-[//]: # (Home page for Amazon Cluster. Hit `Create Cluster` button)
-[//]: # (![]&#40;./images_emr/emr_2.png&#41;)
