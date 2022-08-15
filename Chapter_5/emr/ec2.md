@@ -60,7 +60,8 @@ Delete below already existing rule
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.012.png)
 
-Add my IP rule as below. It will automatically pick your ip address under that search bar tab. Hit 'Save Rules' button
+Add my IP rule as below. It will automatically pick your ip address under that search bar tab. Add `/32` after
+your ip address.  Hit 'Save Rules' button
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.013.png)
 
