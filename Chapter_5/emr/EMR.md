@@ -14,8 +14,7 @@ Use `whatismyipaddress.com` to get your ipv4 address.
 
 Open the Amazon EMR service to start creating a new cluster. 
 
-Cluster creation in `Starting` status
-![](./images_emr/emr_24.png)
+
 Choose Cluster Nodes and Instances
 ![](./images_emr/emr_23.png)
 Step 1: Cluster Creation -> Software Configuration
@@ -44,6 +43,12 @@ Step 4: Security
 ![](./images_emr/emr_3.png)
 
 
+Cluster creation in `Starting` status
+![](./images_emr/emr_24.png)
+
+After some time, the cluster goes to `Running` status. Now, you can open JupyterHub as explained in the following steps.
+![](./images_emr/emr_11.png)
+
 #### JupyterHub
 In the Application interface, get the `User Interface URL` for `JupyterHub`
 ![](./images_emr/emr_20.png)
@@ -59,8 +64,6 @@ Jupterhub application showing a list of notebooks. Click `New` and hit `PySpark`
 
 In the newly created Jupyter notebook, below example shows importing `pyspark` and `tensorflow`
 ![](./images_emr/emr_12.png)
-New cluster created with `Running` status.
-![](./images_emr/emr_11.png)
 
 
 #### Terminating cluster
