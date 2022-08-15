@@ -1,0 +1,3 @@
+# Reviewing the Completed Deep Learning Project
+
+The last phase of a Deep Learning (DL) project is the reviewing process. During the planning phase, responsibility of each stakeholder has been defined and the goal of the project has been set. In this phase, stakeholders must group again to revisit the responsibilities and the goal to evaluate whether the project was carried out as planned or not. Furthermore, the details of the project need to be recorded and potential improvements must be discussed so that the next project can be achieved more efficiently.

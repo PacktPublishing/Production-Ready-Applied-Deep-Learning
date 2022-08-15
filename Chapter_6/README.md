@@ -1,12 +1,6 @@
 # Efficient Model Training
 
-Thic Chapter covers:
+In this folder, we include two notebooks describing TensorFlow and PyTorch model training with multiple CPU and GPU devices.
 
-* Training a model on a single machine
-* Training a model on a cluster
-* Training a model using SageMaker
-* Training a model using Horovod
-* Training a model using Ray
-* Training a model using Kubeflow
-
-
+* [Utilizing multiple devices for training TensorFlow Model](./TensorFlow.ipynb)
+* [Utilizing multiple devices for training PyTorch Model](./PyTorch.ipynb)

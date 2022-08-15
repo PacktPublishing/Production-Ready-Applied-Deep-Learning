@@ -1,6 +1,11 @@
 # Developing a Powerful Deep Learning Model
 
-This chapter includes the two most popular Deep Learning (DL) frameworks: TensorFlow and PyTorch. In this repository, we have two notebooks explaining how to train a DL model using each tool. The notebooks should be self-explanatory but the additional details can be found in our book or the official documentations of each framework.
+This chapter includes the two most popular Deep Learning (DL) frameworks: TensorFlow and PyTorch. In this repository, we have two notebooks explaining how to train a DL model using each tool:
+
+* [PyTorch](PyTorch.ipynb)
+* [TensorFlow](TensorFlow.ipynb)
+
+The notebooks should be self-explanatory but the additional details can be found in our book or the official documentations of each framework.
 
 In order to open up the notebook, you can simply generate docker image included for Chapter 2 (see instuctions located [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles)).
 
