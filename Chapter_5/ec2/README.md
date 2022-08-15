@@ -1,6 +1,4 @@
-﻿## Amazon Elastic Compute Cloud - EC2
-
-#### Single EC2 with AMI - deep-learning AMI ubuntu with conda 
+## Setting up single-node EC2 Instance for ETL
 
 Assuming that one has created an AWS account with an email id and logged into aws console (i.e., root user), we are creating an IAM user.
 
@@ -121,7 +119,7 @@ Ref: <https://aws.amazon.com/premiumsupport/knowledge-center/ec2-block-or-allow-
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.022.png)
 
-Click on the View Instance 
+Click on the View Instance
 
 ![](images/Aspose.Words.90932124-6dd1-4d94-b4b8-df7f7be90e8b.023.png)
 
@@ -175,5 +173,5 @@ For more examples on importing pytorch and mxnet.
 
 Reference: <https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-tensorflow.html>
 
-Billing can be checked in this below page 
+Billing can be checked in this below page
 https://console.aws.amazon.com/billing/home?#/

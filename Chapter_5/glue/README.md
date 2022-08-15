@@ -1,9 +1,10 @@
-### Glue
+## Creating a Glue Job for ETL
 
+TODO: introduction paragraph
 
 #### Prerequisite:
 - Create a bucket in S3
-- Create Policy that has necessary permission for Glue and S3 bucket 
+- Create Policy that has necessary permission for Glue and S3 bucket
 
 Refer the screenshots [here](./glue_create_job.md) for these steps.
 
