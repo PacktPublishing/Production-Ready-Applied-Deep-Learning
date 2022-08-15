@@ -11,17 +11,17 @@ Use `whatismyipaddress.com` to get your ipv4 address.
 ![](./images_emr/emr_19.png)
 
 ### Creating a new EMR cluster
-
 Open the Amazon EMR service to start creating a new cluster. 
 
+Search and open the EMR service
+![](./images_emr/search_for_emr.png)
+The landing page of EMR service shows this quick option page, just hit the button `Go to advanced options`
+![](./images_emr/emr_quick_options.png)
 
-Choose Cluster Nodes and Instances
-![](./images_emr/emr_23.png)
 Step 1: Cluster Creation -> Software Configuration
 ![](./images_emr/emr_22.png)
 Step 1: Cluster Creation -> Software Configuration
 ![](./images_emr/emr_21.png)
-
 
 [//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
 
@@ -29,6 +29,8 @@ Home page for Amazon Cluster. Hit `Create Cluster` button
 ![](./images_emr/emr_2.png)
 Step 2: Hardware configuration
 ![](./images_emr/emr_1.png)
+Step 2: Choose Cluster Nodes and Instances
+![](./images_emr/emr_23.png)
 Step 3: General Cluster Settings
 ![](./images_emr/emr_4.png)
 Step 4: Security
