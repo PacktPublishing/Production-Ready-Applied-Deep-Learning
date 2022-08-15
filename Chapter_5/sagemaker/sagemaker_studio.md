@@ -1,4 +1,6 @@
-### Introduction to Sagemaker Studio 
+### Introduction to Sagemaker Studio
+
+TODO: add the actual introduction to SageMaker Studio
 
 The screenshots below show the sample steps from the SageMaker Studio console
 

@@ -1,7 +1,8 @@
-### Chapter 5 - Data preparation on Cloud
+# Data Preparation on Cloud
 
-- [Introduction to Apache Spark](./spark)
-- [Setting up a single-node EC2 instance](./emr/ec2.md)
-- [Data Processing with EMR](./emr/EMR.md)
-- [Data Processing with Glue](./glue/glue_create_job.md)
-- [Data Processing with SageMaker](./sagemaker/README.md)
+The focus of this chapter is to describe data preparation on Amazon Web Services (AWS). Specifically, we describe Apache Spark, the most popular tool for extract, transform, and load (ETL) operations. We mainly cover four different AWS setups for ETL:
+
+* [Setting up single-node EC2 Instance for ETL](./ec2/README.md)
+* [Setting up an EMR Cluster for ETL](./emr/README.md)
+* [Creating a Glue Job for ETL](./glue/README.md)
+* [Utilizing SageMaker for ETL](./sagemaker/README.md)
