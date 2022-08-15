@@ -5,4 +5,4 @@ Network Exchange (ONNX), a standard file format for ML models, to convert DL mod
 between Deep Learning (DL) frameworks and how it separates the model development
 from deployment.
 
-[Notebook presented key features of ONNX conversions and simple example of inference in ORT](onnx.ipynb) 
+[Notebook presents key features of ONNX conversions and simple example of inference in ORT](onnx.ipynb) 
