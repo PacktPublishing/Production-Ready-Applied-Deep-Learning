@@ -22,14 +22,6 @@ Step 1: Cluster Creation -> Software Configuration
 Step 1: Cluster Creation -> Software Configuration
 ![](./images_emr/emr_21.png)
 
-We need to add rule for inbound rule opening 9443 port (`Custom TCP`). See below two images having an 
-already existing list of rules.
-![](./images_emr/emr_9.png)
-![](./images_emr/emr_10.png)
-Continuation from last image, put your ip address with /32 added.
-![](./images_emr/emr_8.png)
-Choose the security group used for EMR master.
-![](./images_emr/emr_7.png)
 
 [//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
 
@@ -42,8 +34,7 @@ Step 3: General Cluster Settings
 Step 4: Security
 ![](./images_emr/emr_3.png)
 
-
-Cluster creation in `Starting` status
+Cluster creation will start with `Starting` status
 ![](./images_emr/emr_24.png)
 
 After some time, the cluster goes to `Running` status. Now, you can open JupyterHub as explained in the following steps.
@@ -64,6 +55,16 @@ Jupterhub application showing a list of notebooks. Click `New` and hit `PySpark`
 
 In the newly created Jupyter notebook, below example shows importing `pyspark` and `tensorflow`
 ![](./images_emr/emr_12.png)
+
+### Adding inbound rules under Security Group
+We need to add rule for inbound rule opening 9443 port (`Custom TCP`). See below two images having an 
+already existing list of rules.
+![](./images_emr/emr_9.png)
+![](./images_emr/emr_10.png)
+Continuation from last image, put your ip address with /32 added.
+![](./images_emr/emr_8.png)
+Choose the security group used for EMR master.
+![](./images_emr/emr_7.png)
 
 
 #### Terminating cluster
