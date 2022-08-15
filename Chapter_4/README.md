@@ -27,11 +27,11 @@ In the notebook, [W&B.ipynb](https://github.com/PacktPublishing/Production-Ready
 ## DL project tracking with MLflow and DVC
 
 Mlflow is a popular framework that supports tracking technical dependencies, model parameters, metrics, and artifacts. The key components of Mlflow include
-•	Tracking – keeping track of results changes every time model is run
-•	Projects – packaging model code in a reproducible way
-•	Models – packaging model artifacts for future convenient deployment
-•	Model Registry – managing a full lifecycle of an Mlflow Model
-•	Plugins – API allowing writing integration plugins with different DL frameworks and backends
+*	Tracking – keeping track of results changes every time model is run
+*	Projects – packaging model code in a reproducible way
+*	Models – packaging model artifacts for future convenient deployment
+*	Model Registry – managing a full lifecycle of an Mlflow Model
+*	Plugins – API allowing writing integration plugins with different DL frameworks and backends
 
 ## Setting up MLflow
 ```
