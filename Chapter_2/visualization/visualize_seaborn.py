@@ -43,10 +43,10 @@ def seaborn_line_histogram(in_file):
         ####################
         # line plot
         sns.lineplot(data=df_mean_sorted_top10, x="state", y="count_vaccine")
-        plt.xticks(rotation=90)
+        # rotate x-axis labels
+        plt.xticks(rotation=45)
         # alternate option without .gcf
-        plt.subplots_adjust(bottom=0.42)
-        plt.subplots_adjust(left=0.22)
+        plt.subplots_adjust(left=0.2, bottom=0.25)
         # write to a file
         image_name = 'linediagram.eps'  # image name
         plt.savefig(image_name, format=image_format, dpi=1200)

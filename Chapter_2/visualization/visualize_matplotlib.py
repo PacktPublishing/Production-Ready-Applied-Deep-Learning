@@ -65,9 +65,9 @@ def matplotlib_pie_bar(in_file):
         ax.bar(np.arange(len(x_states)), y_vaccine_dist_1, log=1)
         # x-axis ticks range and labels
         ax.set_xticks(np.arange(len(x_states)))
-        ax.set_xticklabels(x_states, rotation=45, zorder=100)
+        ax.set_xticklabels(x_states, rotation=20, zorder=100)
         # alternate option without .gcf
-        plt.subplots_adjust(bottom=0.22)
+        plt.subplots_adjust(left=0.2, bottom=0.25)
         image_name = 'barchart.eps'  # image name
         plt.savefig(image_name, format=image_format, dpi=1200)
         plt.show()
