@@ -1,6 +1,8 @@
 ### Introduction to Sagemaker Studio
 
-TODO: add the actual introduction to SageMaker Studio
+SageMaker Studio is used to build, train, and deploy machine learning (ML) models for any use case with fully managed 
+infrastructure, tools, and workflows. The steps to quickly set up a notebook instance for development is shown in this 
+document. 
 
 The screenshots below show the sample steps from the SageMaker Studio console
 
