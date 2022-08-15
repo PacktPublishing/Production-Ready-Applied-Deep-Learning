@@ -33,11 +33,7 @@ Mlflow is a popular framework that supports tracking technical dependencies, mod
 •	Model Registry – managing a full lifecycle of an Mlflow Model
 •	Plugins – API allowing writing integration plugins with different DL frameworks and backends
 
-# Examples 
-
-[W&B.ipynb](W&B.ipynb)
-
-# Setting up MLflow
+## Setting up MLflow
 ```
 pip install mlflow
 ```
