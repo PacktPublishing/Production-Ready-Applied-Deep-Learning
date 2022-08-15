@@ -1,7 +1,5 @@
 ### EMR Setup
 
-// ToDo: Rearrange sequence
-
 ### Prerequisite:
 
 1. Home page of `Security Groups`. It can be found by searching for "Security groups" in the search bar on the top of the console.
