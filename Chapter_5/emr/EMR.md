@@ -16,6 +16,7 @@ Open the Amazon EMR service to start creating a new cluster.
 Search and open the EMR service
 ![](./images_emr/search_for_emr.png)
 The landing page of EMR service shows this quick option page, just hit the button `Go to advanced options`
+which will take you to the next page
 ![](./images_emr/emr_quick_options.png)
 
 Step 1: Cluster Creation -> Software Configuration
@@ -23,17 +24,14 @@ Step 1: Cluster Creation -> Software Configuration
 Step 1: Cluster Creation -> Software Configuration
 ![](./images_emr/emr_21.png)
 
-[//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
 
-Home page for Amazon Cluster. Hit `Create Cluster` button
-![](./images_emr/emr_2.png)
 Step 2: Hardware configuration
 ![](./images_emr/emr_1.png)
 Step 2: Choose Cluster Nodes and Instances
 ![](./images_emr/emr_23.png)
 Step 3: General Cluster Settings
 ![](./images_emr/emr_4.png)
-Step 4: Security
+Step 4: Security. Fill in the details (Ec2 key pair, security groups etc.) and hit `Create cluster`
 ![](./images_emr/emr_3.png)
 
 Cluster creation will start with `Starting` status
@@ -58,19 +56,32 @@ Jupterhub application showing a list of notebooks. Click `New` and hit `PySpark`
 In the newly created Jupyter notebook, below example shows importing `pyspark` and `tensorflow`
 ![](./images_emr/emr_12.png)
 
-### Adding inbound rules under Security Group
-We need to add rule for inbound rule opening 9443 port (`Custom TCP`). See below two images having an 
-already existing list of rules.
-![](./images_emr/emr_9.png)
-![](./images_emr/emr_10.png)
-Continuation from last image, put your ip address with /32 added.
-![](./images_emr/emr_8.png)
-Choose the security group used for EMR master.
-![](./images_emr/emr_7.png)
-
 
 #### Terminating cluster
 Terminate cluster pop-up.
 ![](./images_emr/emr_14.png)
 Terminate the cluster with the `Terminate` button
 ![](./images_emr/emr_13.png)
+
+### Adding inbound rules under Security Group
+We need to add rule for inbound rule opening 9443 port (`Custom TCP`). 
+
+Find and open the `Security Groups` service.
+![](./images_emr/find_security_groups.png)
+
+The landing page shows the list of security groups and choose the security group which is used while
+creating your EMR cluster in order to edit its inbound rules.
+![](./images_emr/find_security_groups.png)
+
+List of all existing security groups
+![](./images_emr/emr_10.png)
+![](./images_emr/emr_9.png)
+
+Continuation from last image, put your ip address with /32 added.
+![](./images_emr/emr_8.png)
+Choose the security group used for EMR master.
+![](./images_emr/emr_7.png)
+
+[//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
+[//]: # (Home page for Amazon Cluster. Hit `Create Cluster` button)
+[//]: # (![]&#40;./images_emr/emr_2.png&#41;)
