@@ -2,7 +2,11 @@
 
 // ToDo: Rearrange sequence
 
-- Visit [this](https://whatismyipaddress.com/) website to note down your `ip address`
+### Prerequisite:
+
+1. Home page of `Security Groups`. It can be found by searching for "Security groups" in the search bar on the top of the console.
+![](./images_emr/emr_5.png)
+2. Visit [this](https://whatismyipaddress.com/) website to note down your `ip address`
 
 Cluster creation in `Starting` status
 ![](./images_emr/emr_24.png)
@@ -43,8 +47,7 @@ Choose the security group used for EMR master.
 ![](./images_emr/emr_7.png)
 
 [//]: # (![]&#40;./images_emr/emr_6.png&#41; # AWS security hub &#40;not needed&#41;)
-Home page of `Security Groups`. It can be found by searching for "Security groups" in the search bar on the top of the console.
-![](./images_emr/emr_5.png)
+
 Step 3: General Cluster Settings
 ![](./images_emr/emr_4.png)
 Step 4: Security
