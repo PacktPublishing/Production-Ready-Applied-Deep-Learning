@@ -1,6 +1,8 @@
-### EMR Setup
- 
-### Prerequisite:
+### Setting up an EMR Cluster for ETL
+
+In this file, we will show how to create a new cluster step-by-step. 
+
+#### Prerequisite:
 
 1. Home page of `Security Groups`. It can be found by searching for "Security groups" in the search bar on the top of the console.
 ![](./images_emr/emr_5.png)
@@ -8,7 +10,7 @@
 Use `whatismyipaddress.com` to get your ipv4 address.
 ![](./images_emr/emr_19.png)
 
-### Creating a new EMR cluster
+#### Creating a new EMR cluster
 Open the Amazon EMR service to start creating a new cluster. 
 
 Search and open the EMR service
@@ -61,7 +63,7 @@ Terminate cluster pop-up.
 Terminate the cluster with the `Terminate` button
 ![](./images_emr/emr_13.png)
 
-### Adding inbound rules under Security Group
+#### Adding inbound rules under Security Group
 We need to add rule for inbound rule opening 9443 port (`Custom TCP`). 
 
 Find and open the `Security Groups` service.
@@ -72,4 +74,4 @@ creating your EMR cluster in order to edit its inbound rules.
 ![](./images_emr/find_security_groups.png)
 
 For the remaining, follow the steps under **"Create Security Group that has access to ec2 from your laptop"**
-in ![ec2.md](./ec2.md).
+in ![ec2.md](../ec2/README.md)
