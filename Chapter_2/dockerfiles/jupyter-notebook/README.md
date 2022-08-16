@@ -14,7 +14,7 @@
     
   - In the console of last docker run command above, it will show the link `127.0.0.1:8888`.
     Just clicking on it will open the Jupyter endpoint in the default browser.
-    Files saved under work directory will be visiable on current directory
+    Files saved under work directory will be visible on current directory
 
   - Open a new notebook and type below to verify pyspark, tensorflow, pytorch, pytorch_lightning, analytics-zoo, 
     and bigDL.
