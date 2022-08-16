@@ -23,8 +23,7 @@
 
 ### Python files using these datasets:
 
-- [Pandas dataframe example code](./data_preproessing/dataframe.py)
-- [Normalization example code](./data_preproessing/normalize.py)
-
-Chapter_2/visualization/visualize_matplotlib.py
-Chapter_2/visualization/visualize_seaborn.py
+- [Pandas dataframe example code](../data_preproessing/dataframe.py)
+- [Normalization example code](../data_preproessing/normalize.py)
+- [Matplotlib visualization](../visualization/visualize_matplotlib.py)
+- [Seaborn visualization](../visualization/visualize_seaborn.py)
