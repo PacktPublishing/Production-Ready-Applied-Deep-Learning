@@ -7,7 +7,6 @@ The first step in every Machine Learning (ML) project consists of data collectio
   * Anaconda GUI based Installation [link](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/anaconda/anaconda_graphical_installer.md) 
 * [csv_data](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/csv_data) - Location of CSV DataSet (Corona and Titanic)
 * [data_preprocessing](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/data_preprocessing) - Python scripts for Data Preprocessing
-* [data_set](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/data_set) - <to be filled>
 * [dockerfiles](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles) - Docker image files to run Jupyter. 
 * [google_scholar](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/google_scholar) - Data Crawling Python scripts for Google Scholar.
 * [rest](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/rest) - Python scripts to call rest API to collect
