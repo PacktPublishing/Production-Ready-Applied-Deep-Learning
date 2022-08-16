@@ -13,7 +13,6 @@
   mentioned as `National Weekly Moderna`.
 
     https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Distribution-Allocations-by-Juris/b7pe-5nws
-    
 
 ### Titanic Data set
 
@@ -21,3 +20,11 @@
  folder "csv_data" -> "titanic"
 
     https://www.kaggle.com/c/titanic/data?select=train.csv
+
+### Python files using these datasets:
+
+- [Pandas dataframe example code](./data_preproessing/dataframe.py)
+- [Normalization example code](./data_preproessing/normalize.py)
+
+Chapter_2/visualization/visualize_matplotlib.py
+Chapter_2/visualization/visualize_seaborn.py
