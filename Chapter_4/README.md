@@ -21,7 +21,6 @@ pip install wandb
 wandb login
 ```
 
-
 In the notebook, [W&B.ipynb](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_4/W%26B.ipynb), we describe how to use W&B for tracking a model training.
 
 ## DL project tracking with MLflow and DVC
@@ -33,7 +32,9 @@ Mlflow is a popular framework that supports tracking technical dependencies, mod
 *	Model Registry – managing a full lifecycle of an Mlflow Model
 *	Plugins – API allowing writing integration plugins with different DL frameworks and backends
 
-## Setting up MLflow
+#### Experiments tracking with MLFlow
+
+The following command will download mlflow
 ```
 pip install mlflow
 ```
@@ -41,7 +42,7 @@ To start UI locally simply type:
 ```
 mlflow ui
 ```
-and in your webbrowser type http address that is displayed in the row "Listening at: " 
+and navigate to the address displayed in the row "Listening at: " 
 ```
 [INFO] Listening at: http://127.0.0.1:5000
 ```
@@ -52,4 +53,12 @@ if you are doing this for a first time, you will see UI with default page withou
 
 A few examples of basics of experiment tracking with MLflow are presented [here](mlflow.ipynb) 
 
-In the notebook, [MLFlow_dvc.ipynb](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_4/MLFlow_dvc.ipynb), we describe how to use MLFlow and DVC for tracking a model training.
+#### Experiments tracking with MLFlow and DVC
+
+Installing dvc can be achived by running the following commands
+```
+pip install dvc
+```
+
+In the notebook, [mlflow.ipynb](dvc_mlflow.ipynb), we first introduce common dvc operations.
+Then, we describe how to use MLFlow and DVC together for tracking a model training.
