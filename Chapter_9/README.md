@@ -1,5 +1,6 @@
-### Chapter 9 - Scaling Deep Learning Pipeline
+# Scaling Deep Learning Pipeline
 
-- [TensorFlow inference deployment with SageMaker](./sagemaker/tf-with-sagemaker.ipynb)
-- [PyTorch Inference](./sagemaker/pytorch-inference.ipynb)
-- [EI inference](./sagemaker/ei.ipynb)
+In this chapter, we will introduce the two most popular services designed for deploying a DL model as an inference endpoint: Elastic Kubernetes Service (EKS) and SageMaker.
+
+* [Inferencing using Elastic Kubernetes Service](./eks/README.md)
+* [Inferencing using SageMaker](./sagemaker/README.md)
