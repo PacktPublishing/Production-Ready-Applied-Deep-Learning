@@ -1,25 +1,40 @@
-# Experiments tracking, model management, and dataset versioning
+# Experiments Tracking, Model Management, and Dataset Versioning
 
-*	Weights & Biases [https://wandb.ai/site/experiment-tracking]
-*	MLflow [https://mlflow.org/docs/latest/tracking.html]                                                       
-*	SageMaker Studio [https://aws.amazon.com/sagemaker/studio/]
-*	Kubeflow [https://www.kubeflow.org/]
-*	Neptune [https://neptune.ai/product]
-*	Comet [https://www.comet.ml/site/data-scientists/]
-*	Polyaxon [https://polyaxon.com/]
-*	Valohai [https://valohai.com/product/]
+In this chapter, we introduce a set of useful tools for experiments tracking, model management, and dataset versioning which enables effective management of DL projects. The tools we will be discussing in this chapter help us in tracking a large number of experiments and interpreting the results more efficiently which naturally leads to a reduction in operational costs and boost the development cycle.
 
-# Setting up W&B
+*	[Weights & Biases](https://wandb.ai/site/experiment-tracking)
+*	[MLflow](https://mlflow.org/docs/latest/tracking.html)
+*	[SageMaker Studio](https://aws.amazon.com/sagemaker/studio/)
+*	[Kubeflow](https://www.kubeflow.org/)
+*	[Neptune](https://neptune.ai/product)
+*	[Comet](https://www.comet.ml/site/data-scientists/)
+*	[Polyaxon](https://polyaxon.com/)
+*	[Valohai](https://valohai.com/product/)
+
+## DL project tracking with Weights & Biases
+
+[Weights & Biases (W&B)](https://wandb.ai/site/experiment-tracking) is an experiment management platform that provides versioning on models and data. One of the key advantages of W&B comes from its interactive dashboard. It is available as a stand-alone webpage, but you can also embed it into your Jupyter notebook.
+
+In order to use W&B, you need to install and link your account. The details can be found [here](https://docs.wandb.ai/quickstart)
 ```
 pip install wandb
 wandb login
 ```
 
-# Examples 
+In the notebook, [W&B.ipynb](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_4/W%26B.ipynb), we describe how to use W&B for tracking a model training.
 
-[W&B.ipynb](W&B.ipynb)
+## DL project tracking with MLflow and DVC
 
-# Setting up MLflow
+Mlflow is a popular framework that supports tracking technical dependencies, model parameters, metrics, and artifacts. The key components of Mlflow include
+*	Tracking – keeping track of results changes every time model is run
+*	Projects – packaging model code in a reproducible way
+*	Models – packaging model artifacts for future convenient deployment
+*	Model Registry – managing a full lifecycle of an Mlflow Model
+*	Plugins – API allowing writing integration plugins with different DL frameworks and backends
+
+#### Experiments tracking with MLFlow
+
+The following command will download mlflow
 ```
 pip install mlflow
 ```
@@ -27,7 +42,7 @@ To start UI locally simply type:
 ```
 mlflow ui
 ```
-and in your webbrowser type http address that is displayed in the row "Listening at: " 
+and navigate to the address displayed in the row "Listening at: " 
 ```
 [INFO] Listening at: http://127.0.0.1:5000
 ```
@@ -38,8 +53,12 @@ if you are doing this for a first time, you will see UI with default page withou
 
 A few examples of basics of experiment tracking with MLflow are presented [here](mlflow.ipynb) 
 
-# Setting up DVC
+#### Experiments tracking with MLFlow and DVC
+
+Installing dvc can be achived by running the following commands
 ```
 pip install dvc
 ```
-Example of how to set DVC and use it with MLflow can be found [here](dvc_mlflow.ipynb)
+
+In the notebook, [mlflow.ipynb](dvc_mlflow.ipynb), we first introduce common dvc operations.
+Then, we describe how to use MLFlow and DVC together for tracking a model training.
