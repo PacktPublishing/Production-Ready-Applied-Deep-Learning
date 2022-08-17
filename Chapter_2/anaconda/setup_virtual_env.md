@@ -1,4 +1,4 @@
-###### Create a pythong virtual environment with python3.8
+###### Create a python virtual environment with python3.8
 
 Create virtual environment named venc
 

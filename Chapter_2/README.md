@@ -1,32 +1,29 @@
 # Chapter_2
 
-This folder contains the code related to data collection, data cleaning, data preprocessing, and feature extraction.
-Data collection techniques for Html and Json are explained in code [google_scholar.py](./google_scholar/google_scholar.py) 
-with libraries `Beautifulsoup` and `urllib`. Feature Extraction related techniques such as bag-of-words, term frequency-inverse document frequency (tf-idf), ordinal 
-encoding, one hot encoding, normalize features are explained with codes referred in [readme file](./data_preproessing/ordinal_encoding.py).
+The first step in every Machine Learning (ML) project consists of data collection and data preparation. As a subset of ML, Deep Learning (DL) involves the same data processing processes. This chapter introduces various techniques for data collection, data cleaning, data preprocessing, as well as feature extraction. Additionally, we introduce popular tools for data visualization.
 
-In normalize feature example, you will learn how to fill up empty values with a default value with a example from
-google scholar data set. Filling up the missing values will be shown by using `fillna` method with google scholar 
-data set. Similarly, in case of empty `text` feature in reddit data set, use custom function to fill it up in script 
-[get_rest_api_data.py](./rest/get_rest_api_data.py). 
+* [anaconda](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/anaconda) - Anaconda Installation can be done using: 
+  * Installation of Anaconda using command line [link](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/anaconda/anaconda_zsh.md) (or) 
+  * Anaconda GUI based Installation [link](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/Chapter_2/anaconda/anaconda_graphical_installer.md) 
+* [csv_data](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/csv_data) - Location of CSV DataSet (Corona and Titanic)
+* [data_preprocessing](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/data_preprocessing) - Python scripts for Data Preprocessing
+* [dockerfiles](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles) - Docker image files to run Jupyter. 
+* [google_scholar](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/google_scholar) - Data Crawling Python scripts for Google Scholar.
+* [rest](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/rest) - Python scripts to call rest API to collect
+  JSON data, parse it, extract required features from it.
+* [visualization](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/visualization) - Data Visualization for plotting bar chart, pie chart etc.
 
 
-# How to start 
+# Preparing python environment
 
-We recomend using anaconda to create virtual environments. 
+We recommend using anaconda to create virtual environments.
 ```python
 conda create --name bookenv python=3.8
 conda activate bookenv
-```
-Run below command to install needed libraries:
-```python
 pip install -r requirements
+python <target .py script>
 ```
 
-# Docker 
+# Docker
 
-In the final sections of this chapter, we discuss docker based environment for Data Science. 
-The instructions how to set up docker are presented.
-To use dockerfile prepared by us please follow instructions located [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles/jupyter-notebook)
-
-
+This chapter also introduce how Docker improves development and deployment experiences. We also provide a sample docker image which you can use to run the examples in our book. Details can be found [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles)

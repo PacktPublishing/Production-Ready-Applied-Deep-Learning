@@ -2,7 +2,7 @@
 
 - Download the Individual Edition as show in the below image
 
-![alt text for screen readers](./anaconda_installer.png "Download installer").
+![alt text for screen readers](./anaconda_installer.png "Download installer")
 
 - Find the downloaded dmg file in the `Downloads` folder.
 
