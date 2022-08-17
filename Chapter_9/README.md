@@ -1,6 +1,5 @@
 # Scaling Deep Learning Pipeline
 
-In this chapter, we will introduce the two most popular services designed for deploying a DL model as an inference endpoint: Elastic Kubernetes Service (EKS) and SageMaker.
+We will see how to deploy a DL model as an inference endpoint using SageMaker.
 
-* [Inferencing using Elastic Kubernetes Service](./eks/README.md)
 * [Inferencing using SageMaker](./sagemaker/README.md)
