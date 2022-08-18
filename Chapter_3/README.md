@@ -1,4 +1,4 @@
-# Chapter 3
+# Developing a Powerful Deep Learning Model
 
 This chapter includes the two most popular Deep Learning (DL) frameworks: TensorFlow and PyTorch. In this repository, we have two notebooks explaining how to train a DL model using each tool:
 

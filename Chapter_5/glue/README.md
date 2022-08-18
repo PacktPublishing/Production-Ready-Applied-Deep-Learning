@@ -1,6 +1,6 @@
 ## Creating a Glue Job for ETL
 
-We will show with step-by-step on how to create a glue job for ETL. 
+In this file, we describe how to create a Glue job for ETL step by step. 
 
 #### Prerequisite:
 - Create a bucket in S3
