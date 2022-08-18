@@ -22,6 +22,11 @@ Tools:
 * Ray Tune 
 * ELI5, SHAP
 
+## Notebooks
+
+<a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main_readme/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+
+
 # Why should you buy this book?
 
 Developers will be able to transform models into a desired format and deploy them with a full understanding of tradeoffs and possible alternative approaches. The book provides concrete implementations and associated methodologies that are off-the-shelf allowing readers to apply the knowledge in this book right away without much difficulty.
