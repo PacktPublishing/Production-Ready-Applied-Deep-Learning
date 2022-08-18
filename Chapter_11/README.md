@@ -20,3 +20,7 @@ In this chapter, we will introduce how to deploy TensorFlow (TF) and PyTorch mod
 [TF Lite Inference API](https://www.tensorflow.org/lite/api_docs/java/org/tensorflow/lite/Interpreter)
 
 [Module class in org.pytorch](https://pytorch.org/javadoc/1.4.0/org/pytorch/Module.html)
+
+[TF iOS quick start](https://www.tensorflow.org/lite/guide/ios)
+
+[TF android quick start](https://www.tensorflow.org/lite/android/quickstart)
