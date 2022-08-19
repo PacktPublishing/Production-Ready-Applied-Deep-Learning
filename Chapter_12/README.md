@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 ### Monitoring Deep Learning Endpoints in Production
-
-
- 
-=======
-# Monitoring Deep Learning Endpoints in Production
 
 In this chapter, we discuss popular tools for monitoring DL models and alerting. 
 
