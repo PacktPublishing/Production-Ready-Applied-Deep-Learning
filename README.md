@@ -35,11 +35,11 @@ By the end of this book, you will fully understand how to convert  a PoC-like de
 
 
 ## Authors 
-* Tomasz (Tom) Palczewski - [https://github.com/tpalczew] - https://www.linkedin.com/in/tomaszpalczewski/ - https://scholar.google.com/citations?user=v5PUqKkAAAAJ&hl=en
-* Brandon Lee - https://ljj7975.github.io/ - [https://github.com/ljj7975] - https://www.linkedin.com/in/ljj7975/ - https://scholar.google.ca/citations?user=iMOQIAYAAAAJ&hl=en
-* Lenin Mookiah - [https://github.com/leninworld] - https://www.linkedin.com/in/lenin~/ - https://scholar.google.com/citations?user=6JeebN0AAAAJ&hl=en
+* Tomasz (Tom) Palczewski - [github](https://github.com/tpalczew) - [LinkedIn](https://www.linkedin.com/in/tomaszpalczewski/) - [google scholar](https://scholar.google.com/citations?user=v5PUqKkAAAAJ&hl=en)
+* Brandon Lee - [personal web page](https://ljj7975.github.io/) - [github](https://github.com/ljj7975) - [LinkedIn](https://www.linkedin.com/in/ljj7975/) - [google scholar](https://scholar.google.ca/citations?user=iMOQIAYAAAAJ&hl=en)
+* Lenin Mookiah - [github](https://github.com/leninworld) - [LinkedIn](https://www.linkedin.com/in/lenin~/) - [google scholar](https://scholar.google.com/citations?user=6JeebN0AAAAJ&hl=en)
 
 ## Publisher
 
-* PACKT - [https://www.packtpub.com/about]
+* [PACKT](https://www.packtpub.com/about)
 
