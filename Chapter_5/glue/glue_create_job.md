@@ -26,7 +26,26 @@ This document explains the steps that need to create a new AWS Glue Job.
 
 #### Step 2: Create Policy that has necessary permission for Glue and S3 bucket
 
-- To be filled.
+- Create a policy that have access to the S3 buckets. You may select to give permission to all buckets (see below) or specific buckets.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "glue:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+- Create a new IAM role (say: AmazonSageMakerServiceCatalogProductsUseRole) and attach the policy created in the above step.
 
 #### Step 3: Create Crawler that takes input data set (csv file) and create a metadata table inside newly created database "db_google_scholar" 
 
