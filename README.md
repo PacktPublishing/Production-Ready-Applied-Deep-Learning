@@ -1,7 +1,7 @@
 # Production-Ready-Applied-Deep-Learning
 Production-Ready Applied Deep Learning
 
-<img src="https://m.media-amazon.com/images/I/41r8WJmFO4L.jpg" title="book" width="250"/>
+<img src="https://m.media-amazon.com/images/I/41r8WJmFO4L.jpg" title="book" width="350"/>
 
 
 The book focuses on closing the gap between the theory and the applications with detailed examples. While there are many books on introducing various AI models for different problems, we have seen limited resources on the real difficulty, the deployment. This book is a collection of our knowledge which we have obtained from deploying hundreds of AI-based services at large scale. Having said that, people in the domain of data analytics, typically categorized as data scientists or data engineers, would be the primary audience of this work. However, considering the extreme scale that the book aims to cover, the content would be also insightful for those who need to make a critical decision for the overall system, such as software architects, project and product managers as well as C-level executives.
@@ -24,7 +24,7 @@ Tools:
 
 ## Notebooks
 
-<a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main_readme/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+<a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
 
 
 # Why should you buy this book?
