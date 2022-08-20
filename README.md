@@ -26,10 +26,6 @@ Tools:
 
 * <a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
 
-* <a href="https://homl.info/kaggle/"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open in Kaggle" /></a>
-
-* <a href="https://homl.info/deepnote/"><img src="https://deepnote.com/buttons/launch-in-deepnote-small.svg" alt="Launch in Deepnote" /></a>
-
 * <a href="https://colab.research.google.com/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
