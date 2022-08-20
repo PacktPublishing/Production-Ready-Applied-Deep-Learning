@@ -33,5 +33,5 @@ Step 7: Verify installation
 
 
 
-Note: These scripts are tested in mac Sur and should work in any mac OS version.
-    These commands are tested in zsh shell in command line tool [Hyper](https://hyper.is/) and should also work in Terminal.
+(Note: These scripts are tested in mac Sur and should work in any mac OS version.
+    These commands are tested in zsh shell in command line tool [Hyper](https://hyper.is/) and should also work in Terminal.)
