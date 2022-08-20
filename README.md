@@ -24,9 +24,9 @@ Tools:
 
 ## Notebooks
 
-* <a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+* <a href="https://colab.research.google.com/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
 
-* <a href="https://colab.research.google.com/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+* <a href="https://colab.research.google.com/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 # Why should you buy this book?
