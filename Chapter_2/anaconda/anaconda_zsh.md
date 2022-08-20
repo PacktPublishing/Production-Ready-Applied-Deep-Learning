@@ -1,4 +1,4 @@
-### Install Anaconda from command line style [Hyper zsh](https://hyper.is/)
+### Install Anaconda from command line style. 
 
 Step 1: Curl the shell script for Anaconda.
 
@@ -34,3 +34,4 @@ Step 7: Verify installation
 
 
 Note: These scripts are tested in mac Sur and should work in any mac OS version.
+    These commands are tested in zsh shell in command line tool [Hyper](https://hyper.is/) and should also work in Terminal.
