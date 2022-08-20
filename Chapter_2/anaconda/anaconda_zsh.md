@@ -1,4 +1,4 @@
-### Install Anaconda from command line style (Hyper zsh)
+### Install Anaconda from command line style [Hyper zsh](https://hyper.is/)
 
 Step 1: Curl the shell script for Anaconda.
 
