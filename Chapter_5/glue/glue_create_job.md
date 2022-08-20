@@ -45,7 +45,7 @@ This document explains the steps that need to create a new AWS Glue Job.
 }
 ```
 
-- Create a new IAM role (say: AmazonSageMakerServiceCatalogProductsUseRole) and attach the policy created in the above step.
+- Create a new IAM role (for example: `AmazonSageMakerServiceCatalogProductsUseRole`) and attach the policy created in the above step. The `AmazonSageMakerServiceCatalogProductsUseRole` IAM role will be used in the next step.
 
 #### Step 3: Create Crawler that takes input data set (csv file) and create a metadata table inside newly created database "db_google_scholar" 
 
