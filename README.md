@@ -1,7 +1,7 @@
 # Production-Ready-Applied-Deep-Learning
 Production-Ready Applied Deep Learning
 
-<img src="https://m.media-amazon.com/images/I/41r8WJmFO4L.jpg" title="book" width="250"/>
+<img src="https://m.media-amazon.com/images/I/41r8WJmFO4L.jpg" title="book" width="350"/>
 
 
 The book focuses on closing the gap between the theory and the applications with detailed examples. While there are many books on introducing various AI models for different problems, we have seen limited resources on the real difficulty, the deployment. This book is a collection of our knowledge which we have obtained from deploying hundreds of AI-based services at large scale. Having said that, people in the domain of data analytics, typically categorized as data scientists or data engineers, would be the primary audience of this work. However, considering the extreme scale that the book aims to cover, the content would be also insightful for those who need to make a critical decision for the overall system, such as software architects, project and product managers as well as C-level executives.
@@ -22,6 +22,11 @@ Tools:
 * Ray Tune 
 * ELI5, SHAP
 
+## Notebooks
+
+<a href="https://nbviewer.jupyter.org/github/PacktPublishing/Production-Ready-Applied-Deep-Learning/blob/main/index.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+
+
 # Why should you buy this book?
 
 Developers will be able to transform models into a desired format and deploy them with a full understanding of tradeoffs and possible alternative approaches. The book provides concrete implementations and associated methodologies that are off-the-shelf allowing readers to apply the knowledge in this book right away without much difficulty.
@@ -30,9 +35,9 @@ By the end of this book, you will fully understand how to convert  a PoC-like de
 
 
 ## Authors 
-* Tomasz (Tom) Palczewski - [https://github.com/tpalczew] - https://www.linkedin.com/in/tomaszpalczewski/
-* Brandon Lee - [https://github.com/ljj7975] - https://www.linkedin.com/in/ljj7975/
-* Lenin Mookiah - [https://github.com/leninworld] - https://www.linkedin.com/in/lenin~/
+* Tomasz (Tom) Palczewski - [https://github.com/tpalczew] - https://www.linkedin.com/in/tomaszpalczewski/ - https://scholar.google.com/citations?user=v5PUqKkAAAAJ&hl=en
+* Brandon Lee - https://ljj7975.github.io/ - [https://github.com/ljj7975] - https://www.linkedin.com/in/ljj7975/ - https://scholar.google.ca/citations?user=iMOQIAYAAAAJ&hl=en
+* Lenin Mookiah - [https://github.com/leninworld] - https://www.linkedin.com/in/lenin~/ - https://scholar.google.com/citations?user=6JeebN0AAAAJ&hl=en
 
 ## Publisher
 
