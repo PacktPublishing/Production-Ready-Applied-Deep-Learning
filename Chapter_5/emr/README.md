@@ -74,4 +74,4 @@ creating your EMR cluster in order to edit its inbound rules.
 ![](./images_emr/find_security_groups.png)
 
 For the remaining, follow the steps under **"Create Security Group that has access to ec2 from your laptop"**
-in ![ec2.md](../ec2/README.md)
+in ![ec2.md](../ec2)

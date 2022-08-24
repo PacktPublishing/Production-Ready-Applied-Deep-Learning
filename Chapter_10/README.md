@@ -4,7 +4,6 @@ This chapter introduces techniques for improving the inference latency while mai
 
 In this repository, we provide solid examples for the following techniques:
 
-#TODO: sample code to be filled
 * Network quantization: reducing the number of bits used for model parameters
   * [Network quantization using TensorFlow](./network_quantization_tf.ipynb)
   * [Network quantization using PyTorch](./network_quantization_pytorch.ipynb)

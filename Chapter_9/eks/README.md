@@ -16,4 +16,4 @@ we will introduce how the pods can be scaled horizontally for the dynamic incomi
 
 [TF model serving with Kubernetes and Amazon Elastic Inference](https://aws.amazon.com/blogs/machine-learning/optimizing-tensorflow-model-serving-with-kubernetes-and-amazon-elastic-inference/)
 
-[PyTorch model archive](https://github.com/pytorch/serve/blob/master/model-archiver/README.md) - Package all models into a single package and create PyTorch serving similar to [TensorFlow serving](https://www.tensorflow.org/tfx/guide/serving).
+[PyTorch model archive](https://github.com/pytorch/serve/blob/master/model-archiver) - Package all models into a single package and create PyTorch serving similar to [TensorFlow serving](https://www.tensorflow.org/tfx/guide/serving).
