@@ -1,5 +1,7 @@
 ### How to Create Docker Image (GPU) for Data Science
 
+Note: The image is taken from Amazon Machine Image (AMI)
+
 * For GPU you need to have `nvidia-docker2` on your host machine.
 
 
