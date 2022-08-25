@@ -1,4 +1,4 @@
-### How to Create Docker Image for Data Science 
+### How to Create Docker Image (CPU) for Data Science
 
 Using docker, you can create a snapshot of your working environment including the underlying version of OS. Altogether, docker enables you to separate your applications from your infrastructure so you can deliver your software quickly. Installing docker can be achieved by following [this instructions](https://www.docker.com/get-started).
 
