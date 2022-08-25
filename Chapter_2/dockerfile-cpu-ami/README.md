@@ -1,5 +1,7 @@
 ### How to Create Docker Image (CPU) for Data Science
 
+Note. The image is taken from Amazon Machine Image (AMI)
+
 * To build do
 
 ```
