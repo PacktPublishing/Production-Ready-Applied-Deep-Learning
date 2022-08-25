@@ -14,3 +14,6 @@ Using docker, you can create a snapshot of your working environment including th
   In the console of last docker run command above, it will show the link with a credential `http://127.0.0.1:8888/?token=....`.
   Just clicking on it will open the Jupyter endpoint in the default browser.
   Files saved under work directory will be visible on current directory.
+
+
+For GPU based docker image, refer [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfile-gpu-ami)
