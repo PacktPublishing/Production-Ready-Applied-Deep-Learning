@@ -26,4 +26,8 @@ python <target .py script>
 
 # Docker
 
-This chapter also introduce how Docker improves development and deployment experiences. We also provide a sample docker image which you can use to run the examples in our book. Details can be found [here](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfiles)
+This chapter also introduce how Docker improves development and deployment experiences. We also provide sample docker images which you can use to run the examples in our book.
+
+* [dockerfile for cpu environment created from raw Ubuntu instance](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfile-cpu)
+* [dockerfile for cpu environment built on top of AWS AMI](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfile-cpu-ami)
+* [dockerfile for gpu environment built on top of AWS AMI](https://github.com/PacktPublishing/Production-Ready-Applied-Deep-Learning/tree/main/Chapter_2/dockerfile-gpu-ami)
