@@ -35,6 +35,11 @@ Developers will be able to transform models into a desired format and deploy the
 
 By the end of this book, you will fully understand how to convert  a PoC-like deep learning model into a ready-to-use version that is suitable for the target production environment.
 
+## Where to Buy
+[Amazon](https://www.amazon.com/Production-Ready-Applied-Deep-Learning-TensorFlow/dp/180324366X)
+
+[PACKT](https://www.packtpub.com/product/production-ready-applied-deep-learning/9781803243665)
+
 
 ## Authors 
 * Tomasz (Tom) Palczewski - [github](https://github.com/tpalczew) - [LinkedIn](https://www.linkedin.com/in/tomaszpalczewski/) - [google scholar](https://scholar.google.com/citations?user=v5PUqKkAAAAJ&hl=en)
