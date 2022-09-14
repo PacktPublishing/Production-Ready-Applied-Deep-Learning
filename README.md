@@ -9,7 +9,6 @@ Learn how to construct and deploy complex models in PyTorch and TensorFlow deep 
 <br/><br/>
 The book focuses on closing the gap between the theory and the applications with detailed examples. While there are many books on introducing various AI models for different problems, we have seen limited resources on the real difficulty, the deployment. This book is a collection of our knowledge which we have obtained from deploying hundreds of AI-based services at large scale. Having said that, people in the domain of data analytics, typically categorized as data scientists or data engineers, would be the primary audience of this work. However, considering the extreme scale that the book aims to cover, the content would be also insightful for those who need to make a critical decision for the overall system, such as software architects, project and product managers as well as C-level executives.
 
-<br/>
 
 Since this book puts emphasis on how to deploy machine learning systems at scale, readers with some knowledge in machine learning or software engineering would find the contents easier to follow. However, this is not a hard requirement as we also discuss theoretical and technical background with the assumption that readers are new to the domain. Overall, we believe that our book would be fruitful and interesting to all the readers regardless of their specialties or experiences. This book is fully focused on applied side of Deep Learning (DL). Therefore, we are not introducing theory behind different DL components and DL training process.
 
