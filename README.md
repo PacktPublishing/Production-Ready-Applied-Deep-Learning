@@ -1,4 +1,4 @@
-# Production-Ready-Applied-Deep-Learning
+# Production-Ready Applied Deep Learning
 Learn how to construct and deploy complex models in PyTorch and TensorFlow deep learning Frameworks
 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61mz-jkb2jL.jpg" title="book" width="350"/>
